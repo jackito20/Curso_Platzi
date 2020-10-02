@@ -29,6 +29,29 @@ Las tres tecnologías básicas que debe conocer y manejar un **Frontend** son:
 * **HTML**: es el lenguaje de marcado para hacer websites.
 * **CSS**: hojas de estilos cascada, el diseño hecho código.
 * **JavaScript**: es el único lenguaje que funciona actualmente dentro de los navegadores de manera nativa."
+
+## Plan de estudios para ser un gran desarrollador web
+
+En [Platzi.com](http://platzi.com/) tienes todos los cursos necesarios para convertirte en un gran **desarrollador web**:
+
+* [Desarrollo Web](https://platzi.com/cursos/html5-css3/)
+* [Git y Github](https://platzi.com/cursos/git-github/)
+* [Responsive Design](https://platzi.com/cursos/responsive-design/)
+* [CSS Grid Layout](https://platzi.com/cursos/css-grid-layout/)
+* [Animaciones](https://platzi.com/cursos/animaciones-web/)
+* [Post CSS](https://platzi.com/cursos/postcss/)
+* [De jQuery a JavaScript](https://platzi.com/cursos/jquery-js/)
+* [Fundamentos de JavaScript](https://platzi.com/cursos/fundamentos-javascript/)
+* [Webpack](https://platzi.com/cursos/webpack/)
+* [ReactJS](https://platzi.com/cursos/react/)
+* [Redux](https://platzi.com/cursos/redux/)
+* [React Router](https://platzi.com/cursos/react-router/)
+
+## Software para trabajar en desarrollo web e introducción al proyecto
+
+La herramienta fundamental para el desarrollo web es el Editor de Código. Existen varias opciones entre las que destacan: SublimeText, Atom y VisualStudio Code.
+
+Los editores de código se pueden configurar y personalizar para ofrecer una mejor experiencia al desarrollador.
 {% endtab %}
 
 {% tab title="Second Tab" %}
