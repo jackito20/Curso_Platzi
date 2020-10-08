@@ -118,7 +118,7 @@ El archivo **index.html** es el archivo que el navegador abre por defecto al acc
 
 La estructura básica de un archivo html es la siguiente:
 
-```text
+```markup
 
 <html>
   <head>
@@ -133,7 +133,7 @@ La estructura básica de un archivo html es la siguiente:
 html>
 ```
 
-```text
+```markup
 <!DOCTYPE html>
 <html>
   <head>
@@ -182,7 +182,7 @@ La estructura html de nuestro proyecto usa una o más de las siguientes etiqueta
 * **img**: con esta etiqueta podemos enlazar imágenes en el documento.
 * **figure**: le da un contexto semántico a las imágenes.
 
-```text
+```markup
 <section>
       <h1>
         Hola! Soy <strong>Leonidas Esteban</strong> Desarrollador <br/> <strong>Javascript</strong> con <br> pasión por la <strong>enseñanza</strong>
@@ -242,8 +242,36 @@ Para **a**:
 
 * **href**: la ubicación o ruta a la que enlaza esta etiqueta de ancla. En el caso de querer enlazar a elementos que se encuentran dentro del mismo documento, este atributo debe indicar el valor del atributo ““id”” de ese elemento destino del enlace.
 
-```text
-<section>
+```markup
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Leonidas Esteban</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <figure>
+          <img src="images/logo.png" alt="Logo de http://leonidasesteban.com" />
+        </figure>
+        <nav>
+          <ol>
+            <li>
+              <a href="#">Portafolio</a>
+            </li>
+            <li>
+              <a href="#">Experiencia</a>
+            </li>
+            <li>
+              <a href="#">Trabajemos juntos</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </header>
+    <section>
       <h1>
         Hola! Soy <strong>Leonidas Esteban</strong> Desarrollador <br/> <strong>Javascript</strong> con <br> pasión por la <strong>enseñanza</strong>
       </h1>
@@ -273,7 +301,171 @@ Para **a**:
         <a>Ver Plática</a>
       </article>
     </section>
+    <section>sección contacto</section>
+    <footer>footer</footer>
+  </body>
+</html>
 ```
+
+## Formularios HTML
+
+Los Formularios en html son unidades de información que nos permiten recolectar información para enviarlos al propietario del website o a un servicio externo. Esta formado por dos partes o contextos: una parte donde se hace el ingreso y modelación de esos datos \(en el frontend\), y otra parte que se encarga de enviar, procesar y almacenar esos datos \(en el backend\).
+
+Los formularios se crean con la etiqueta **form**. El atributo principal de un formulario es _action_, ya que contiene la ruta a la que serán enviados los datos recolectados.
+
+Hay diversos elementos html que permiten la captura o recolección de datos, aunque generalmente se usan los elementos creados con la etiqueta _input_. Los inputs también sirven para crear botones, aunque existe una etiqueta especial para ésto llamada _button_… El atributo principal de los inputs es _type_, que indica el tipo de comportamiento o dato que se espera recibir.
+
+Los elementos creados con la etiqueta _label_ muestran un texto que se puede asociar con un input para darle mayor significado al campo, principalmente cuando no se usa el atributo _placeholder_.
+
+```markup
+<section id="contacto">
+  <form action="/suscripcion/">
+    <h3>¿Creamos algo juntos?</h3>
+    <input type="text" placeholder="Déjame tu email" id="email">
+    <button>Enviar</button>
+  </form>
+</section>
+```
+
+## Navegación entre secciones
+
+**target**  
+Especifica en donde desplegar la URL enlazada:
+
+\__self:_ Carga la URL en el mismo contexto de navegación que el actual. Este es el comportamiento por defecto.  
+\__blank:_ Carga la URL en un nuevo contexto de navegación. Usualmente es una pestaña, sin embargo, los usuarios pueden configurar los navegadores para utilizar una ventana nueva en lugar de la pestaña.  
+\__parent:_ Carga la URL en el contexto de navegación padre \(parent\) del actual. Si no existe el padre, este se comporta del mismo modo que \_self.  
+\__top:_ Carga la URL en el contexto más alto de navegación \(el cual es un ancestro del actual, y no tiene padre \(parent\)\). Si no hay padre \(parent\), este se comporta del mismo modo que \_self.
+
+```markup
+<nav>
+  <ol>
+    <li>
+      <a href="./portafolio/index.html">Portafolio</a>
+    </li>
+    <li>
+      <a href="#eventos">Experiencia</a>
+    </li>
+    <li>
+      <a href="#contacto">Trabajemos juntos</a>
+    </li>
+  </ol>
+</nav>
+```
+
+```markup
+<a href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
+```
+
+## Formas de agregar estilos a HTML
+
+Hay tres opciones para incluir estilos que definan la apariencia de tu html:
+
+* **Estilos en línea**: se definen directamente en el elemento html que quieres estilizar, se agregan con el atributo **style**.
+* **Estilos con el tag Style**: regularmente este tag se incluye dentro de la etiqueta **head** del html.
+* **Estilos enlazados desde un archivo css externo**: utilizando la etiqueta **link** que nos permite enlazar recursos externos.
+
+A **CSS**, se le llama **hojas de estilos en cascada** porque los estilos que se definen para una página, se van aplicando de arriba hacia abajo, y de lo más general a lo más particular, teniendo prioridad lo más particular. Esto es, los estilos que prevalecen son los que han sido definidos **en línea**, luego los que fueron definidos mediante la etiqueta **style** en la cabeza o cuerpo del html, y por último los estilos definidos en archivos externos enlazados con la etiqueta **link**. Esta prioridad se puede alterar al usar el modificador \*\*!important"" en la definición de algún estilo en particular, aunque esto no es recomendado.
+
+## Reglas, selectores, declaraciones, propiedades y valores de CSS
+
+**- ¿Cuál de las 3 formas de insertar estilos HTML es la que se debería utilizar y por qué?**  
+Archivos externos. Porque nos permite tener separado el código HTML del código CSS.
+
+**- ¿Cuáles son las partes de un bloque de código en CSS?**  
+Reglas  
+Selectores  
+Declaraciones  
+Propiedades  
+Valores
+
+**- ¿Qué es una regla?**  
+Es el conjunto de todas las partes del bloque de código \(selectores, declaraciones, propiedades y valores\)
+
+**- ¿Qué es un selector?**  
+Es la forma que usamos en CSS para apuntar hacia uno o varios elementos de HTML. Existen varios tipos de selectores.
+
+**- ¿Cuáles son los tipos de selectores más importantes y qué significan?**  
+De etiqueta = Se usa para apuntar a un tipo de etiqueta de html. No se recomienda usar cuando queremos afectar a una etiqueta y tenemos muchas en nuestro código HTML  
+Descendentes = Se usa para apuntar a un elemento desde el padre hasta el hijo. Este último será al que vayamos a afectar.  
+De id = Se usa cuando queremos afectar únicamente a una etiqueta en concreto, no importa cual sea, desde que se únicamente a ella.  
+De clase = Se usa para afectar a varias etiquetas, las cuales deben tener como atributo class que sirve como apuntador hacia esas etiquetas
+
+**Ejemplos**
+
+++Etiqueta ++
+
+```css
+/*si ponemos el siguiente código*/
+a {
+  color: blue;
+}
+/*Nos aplicará un color azul a todas las etiquetas de ancla en el documento HTML*/
+```
+
+Descendentes
+
+```css
+body header div nav ol li a{
+	color: green;
+}
+/*nos aplicará el estilo únicamente a las etiquetas de ancla (<a>) que estén dentro de <li>*/
+```
+
+id
+
+```css
+/*supongamos que tenemos una etiqueta de párrafo con la id "parrafo1"...*/
+
+#parrafo1{
+	color: blue;
+}
+
+/*Nos aplicará el estilo únicamente a ese párrafo con id "parrafo1", PD las id son únicas no puedes poner una misma id en dos etiquetas distintas*/
+```
+
+Class
+
+```css
+.importante {
+	color: pink;
+}
+```
+
+**- ¿Qué es una declaración?**  
+Es todo el conjunto de propiedades y valores que se encuentran dentro de las llaves del bloque de código de CSS
+
+**- ¿Qué es una propiedad?**  
+Son todas las diferentes formas que podemos usar para estilizar los elementos. Su funcionamiento está ligado a los valores
+
+**- ¿Qué son los valores?**  
+Son los valores que una propiedad puede tener.
+
+![](../.gitbook/assets/image%20%287%29.png)
+
+## Los estilos incluidos por el navegador
+
+Los navegadores incluyen estilos predeterminados para cada elemento html. Esto significa que aún cuando no hayas definido o asignado ningún estilo a tus etiquetas, éstas tendrán una apariencia particular que es muy similar en todos los navegadores, aunque no necesariamente idéntica.
+
+
+
+## Agregando clases a los componentes escritos en HTML
+
+Para aplicar estilos a los componentes html, lo más común y recomendable es hacerlo a través de **clases** que se asignan al elemento html mediante el atributo **class**.
+
+Un elemento html puede tener varias clases, se deben indicar en el mismo atributo class pero separadas por un espacio en blanco.
+
+Al escoger los nombres de clases, debemos tener en cuenta que se puedieran aplicar a muchos elementos, o a elementos particulares, así que la claridad y precisión en su identificación facilitará la contextualización y mantenibilidad en el futuro.
+
+Algunos de los estándares más usados para la identificación de clases son:
+
+* [OOCSS](https://www.keycdn.com/blog/oocss/)
+* [BEM](http://getbem.com/naming/)
+* [Component CSS](https://www.sitepoint.com/introducing-ccss-component-css/)
 {% endtab %}
 {% endtabs %}
+
+
+
+
 
