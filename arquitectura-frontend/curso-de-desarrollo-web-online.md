@@ -182,6 +182,39 @@ La estructura html de nuestro proyecto usa una o más de las siguientes etiqueta
 * **img**: con esta etiqueta podemos enlazar imágenes en el documento.
 * **figure**: le da un contexto semántico a las imágenes.
 
+```text
+<section>
+      <h1>
+        Hola! Soy <strong>Leonidas Esteban</strong> Desarrollador <br/> <strong>Javascript</strong> con <br> pasión por la <strong>enseñanza</strong>
+      </h1>
+      <img> 
+    </section>
+    <section>
+      <h2>Portafolio (Proyectos Destacados)</h2>
+      <article>
+        <h3>Platzi Video</h3>
+        <h6>React Native / React</h6>
+        <p><small><strong>Fecha:</strong> 01/07/2018</small></p>
+        <p><small><strong>Pueds verlo en::</strong> www.platzi.com/native</small></p>
+        <p>Platzi Video fue el resultado de 3 meses de trabajo
+            para crear la mejor app para enseñar el funcionamiento
+            de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de nevegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma</p>
+      <img>
+      </article>
+    </section>
+    <section>
+      <h2>Más sobre mi experiencia</h2>
+      <article>
+        <figure>
+          <img/>
+        </figure>
+        <h3>PlatziConf México 2018</h3>
+        <p>El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida de constante aprendizaje.</p>
+        <a>Ver Plática</a>
+      </article>
+    </section>
+```
+
 ## Atributos HTML
 
 Los atributos son valores agregados a las etiquetas \(tags\) html que extienden su habilidad o funcionalidad con información específica.
@@ -208,6 +241,39 @@ Para **meta**, también en la cabecera _head_ del documento:
 Para **a**:
 
 * **href**: la ubicación o ruta a la que enlaza esta etiqueta de ancla. En el caso de querer enlazar a elementos que se encuentran dentro del mismo documento, este atributo debe indicar el valor del atributo ““id”” de ese elemento destino del enlace.
+
+```text
+<section>
+      <h1>
+        Hola! Soy <strong>Leonidas Esteban</strong> Desarrollador <br/> <strong>Javascript</strong> con <br> pasión por la <strong>enseñanza</strong>
+      </h1>
+      <img src="images/hero.jpg" width="500" height="300" alt="imagen principal del sitio"> 
+    </section>
+    <section>
+      <h2>Portafolio (Proyectos Destacados)</h2>
+      <article>
+        <h3>Platzi Video</h3>
+        <h6>React Native / React</h6>
+        <p><small><strong>Fecha:</strong> 01/07/2018</small></p>
+        <p><small><strong>Pueds verlo en::</strong> www.platzi.com/native</small></p>
+        <p>Platzi Video fue el resultado de 3 meses de trabajo
+            para crear la mejor app para enseñar el funcionamiento
+            de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de nevegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma</p>
+      <img  width="500" src="images/platzi-video-react-native.png" alt="prouyecto del curso de React Native">
+      </article>
+    </section>
+    <section>
+      <h2>Más sobre mi experiencia</h2>
+      <article>
+        <figure>
+          <img src="images/platzi-conf.jpg" width="500" />
+        </figure>
+        <h3>PlatziConf México 2018</h3>
+        <p>El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida de constante aprendizaje.</p>
+        <a>Ver Plática</a>
+      </article>
+    </section>
+```
 {% endtab %}
 {% endtabs %}
 
