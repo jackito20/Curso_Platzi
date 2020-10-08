@@ -181,6 +181,33 @@ La estructura html de nuestro proyecto usa una o más de las siguientes etiqueta
 * **a**: corresponde a un ancla o enlace a una url interna o externa del documento.
 * **img**: con esta etiqueta podemos enlazar imágenes en el documento.
 * **figure**: le da un contexto semántico a las imágenes.
+
+## Atributos HTML
+
+Los atributos son valores agregados a las etiquetas \(tags\) html que extienden su habilidad o funcionalidad con información específica.
+
+A continuación, un ejemplo de los atributos más comunes y usados en algunas etiquetas:
+
+Para **img**:
+
+* **src**: específica la _ruta_ de la imagen que será mostrada a través de esta etiqueta. La ruta puede ser _absoluta_ \(cunado especifica una dirección exacta, incluyendo el prefijo _http\(s\)_ \) o _relativa_ \(cuando la referencia a la ubicación de la imagen parte de la ubicación del archivo actual\).
+* **alt**: indica un texto alternativo que será mostrado en lugar de la imagen cuando ésta no pueda ser mostrada.
+* **width**: ancho de la imagen en pixeles.
+* **height**: alto de la imagen en pixeles.
+
+Para **link**, en la cabecera _head_ del documento:
+
+* **rel**: indica la relación del recurso con el contenido.
+* **type**: indica el tipo de recurso / formato.
+* **href**: indica la ubicación \(url\) del recurso enlazado.
+
+Para **meta**, también en la cabecera _head_ del documento:
+
+* **charset**: indica la tabla de caracteres \(utf-8 para caracteres latinos\) usada en el documento.
+
+Para **a**:
+
+* **href**: la ubicación o ruta a la que enlaza esta etiqueta de ancla. En el caso de querer enlazar a elementos que se encuentran dentro del mismo documento, este atributo debe indicar el valor del atributo ““id”” de ese elemento destino del enlace.
 {% endtab %}
 {% endtabs %}
 
