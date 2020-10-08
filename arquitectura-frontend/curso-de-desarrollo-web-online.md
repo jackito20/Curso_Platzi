@@ -51,7 +51,7 @@ En [Platzi.com](http://platzi.com/) tienes todos los cursos necesarios para conv
 
 La herramienta fundamental para el desarrollo web es el Editor de Código. Existen varias opciones entre las que destacan: SublimeText, Atom y VisualStudio Code.
 
-Los editores de código se pueden configurar y personalizar para ofrecer una mejor experiencia al desarrollador.OM
+Los editores de código se pueden configurar y personalizar para ofrecer una mejor experiencia al desarrollador.
 {% endtab %}
 
 {% tab title="HTML" %}
@@ -71,10 +71,6 @@ A continuación, un ejemplo sencillo de la estructura del DOM:
     * section
       * article
     * footer
-
-![](../.gitbook/assets/image%20%287%29.png)
-
-
 
 ## Etiquetas
 
