@@ -132,6 +132,55 @@ La estructura básica de un archivo html es la siguiente:
   body>
 html>
 ```
+
+```text
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Leonidas Esteban</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <figure>
+          <img> logo
+        </figure>
+        <nav>
+          <ol>
+            <li>
+              <a>Portafolio</a>
+            </li>
+            <li>
+              <a>Experiencia</a>
+            </li>
+            <li>
+              <a>Trabajemos juntos</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </header>
+    <section>sección principal</section>
+    <section>sección portafolio</section>
+    <section>sección eventos</section>
+    <section>sección contacto</section>
+    <footer>footer</footer>
+  </body>
+</html>
+```
+
+## Continuando con la estructura de nuestro Sitio Web
+
+La estructura html de nuestro proyecto usa una o más de las siguientes etiquetas:
+
+* **h1** a **h6**: son etiquetas para indicar títulos con un estilo que destaca del resto.
+* **article**: es la parte de nuestro contenido que puede vivir por sí mismo. Pueden haber tantos artícle como proyectos o eventos tenga nuestro portafolio.
+* **p**: define el texto de un párrafo.
+* **small**: aplica una apariencia de texto reducido en tamaño.
+* **strong**: aplica al texto un formato de negritas.
+* **a**: corresponde a un ancla o enlace a una url interna o externa del documento.
+* **img**: con esta etiqueta podemos enlazar imágenes en el documento.
+* **figure**: le da un contexto semántico a las imágenes.
 {% endtab %}
 {% endtabs %}
 
