@@ -463,6 +463,117 @@ Algunos de los estándares más usados para la identificación de clases son:
 * [BEM](http://getbem.com/naming/)
 * [Component CSS](https://www.sitepoint.com/introducing-ccss-component-css/)
 {% endtab %}
+
+{% tab title="Estilos y CSS" %}
+## Unidades de medida y colores
+
+Hay varias unidades de medida con las que se puede trabajar en CSS: %, em, rem, px, pt, fr, vw, vh  
+Las medidas más comunes y utilizadas son los pixeles. Un **píxel** es la menor unidad homogénea en color que forma parte de una imagen digital. Es la unidad más práctica y fácil de utilizar y manipular, y es la que utilizaremos mayormente en este curso.
+
+Los colores en CSS pueden ser representados de al menos tres formas diferentes:
+
+* Representados con **palabras claves** para cada color, como: red, green, blue, pink, yellow, black, etc.
+* Usando la composición de tres colores \(**rojo**, **verde** y **azul**\): para esto podemos usar notación hexadecimal o las funciones rgb\(\) y rgba\(\).
+* Usando la composición mediante valores de **Matiz**, **Saturación** y **Luminosidad** con: hls\(\) y hlsa\(\).
+
+Con respecto a los valores hexadecimales, cada color está representado por 6 digitos, que representan 3 pares de hexadecimales: FF - FF - FF \(rojo, verde y azul\), en el que cada par puede tomar valores hexadecimales entre 00 y FF. Cada uno equivale a valores decimales entre 0 y 255, donde 0 es la ausencia de ese color y 255 la mayor cantidad disponible. De esta manera cada color se forma por la combinación de diferentes proporciones de rojo, verde y azul.
+
+* \#000000 es equivalente a Negro
+* \#FF0000 es equivalente a Rojo
+* \#00FF00 es equivalente a Verde
+* \#0000FF es equivalente a Azul
+* \#FFFFFF es equivalente a Blanco
+
+ [&lt;color&gt; - CSS: Cascading Style Sheets \| MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)
+
+## Inspector de elementos
+
+Para ver y depurar el código de una página html, el navegador incluye una herramienta llamada **Inspector de elementos**, o simplemente **inspector**, que abre, en una sección de la ventana, una serie de espacios con información técnica muy detallada sobre todo lo que sucede en el DOM, incluídos los estilos que tienen aplicados cada uno de los elementos del html.
+
+La mayoría de los navegadores incluye algún tipo de **Inspector**, en el curso usamos Google Chrome, pero la misma herramienta \(o similar\) la encuentras en Firefox, Opera, Edge, etc.
+
+Utilizando el Inspector podemos hacer modificaciones \(temporales\) manualmente en el html de cualquier sitio web, consultar sus estilos y recursos enlazados, hacer pruebas en tiempo real con JavaScript, monitorear variables o eventos entre muchas otras tareas útiles para cualquier desarrollador.
+
+## Tipos de textos personalizados
+
+Los tipos de texto, también conocidos como **tipos de letras** o **fuentes**, son el conjunto de diseños tipográficos que representan a cada una de las letras y los caracteres gráficos en el documento. Su nombre correcto es **tipografía**. Los diferentes tipos de fuente están basados en archivos que existen en cada sistema operativo.
+
+Algunos ejemplos de **tipos de texto** o fuentes, son:
+
+* Arial
+* Times New Roman
+* Verdana
+* DeJaVu
+* Lato
+* OpenSans
+* Roboto
+
+CSS permite utilizar **fuentes** diferentes a las disponibles en el sistema operativo del cliente mediante la importación o el enlace a archivos de fuentes externas. Las más usadas son las que están disponibles a través del sitio web de **Google Fonts**.
+
+Al definir el tipo de texto asociado a una clase css con la propiedad **font-family** indicamos al navegador que debe intentar usar esa fuente en particular para darle la apariencia tipográfica a los textos de ese elemento html.
+
+[https://fonts.google.com/](https://fonts.google.com/)
+
+```markup
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
+```
+
+```css
+body{
+    font-family: 'Source Sans Pro',sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+}
+
+```
+
+## Propiedades para los textos
+
+Además de todas las propiedades comunes que comparten los elementos estándar de html, como: display, position, margin, padding, top, left, right, bottom, border, etc., los elementos que admiten contenidos textuales aceptan una serie particular de propiedades entre las que se encuentran las siguientes:
+
+* **font-family**: define el tipo de fuente aplicado al texto.
+* **color**: define el colore del texto.
+* **line-height**: define la altura desde la base del texto hasta la base de la siguiente línea de texto.
+* **font-size**: define el tamaño del texto, admite cualquiera de las unidades de medida disponibles.
+* **letter-spacing**: define el espaciado entre las letras del texto.
+* **font-weight**: define el ““peso”” de la letra, negrita, normal, light y normalmente se indica en múltiplos de 100 o usando keywords.
+* **text-decoration**: define el decorado del texto como subrayado, tachado, con subrayado superior, etc.
+* **text-transform**: permite transformar el estado de mayúsculas / minúsculas en el texto, usando uppercase para mayúsculas sostenidas, lowercase para minúsculas sostenidas, etc.
+
+```css
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h1, h2 ,h3, h4, h5, h6 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+   /* font-style: italic; */
+}
+
+h1{
+    font-size: 40px;
+    line-height: 1.5em;
+    letter-spacing: -.2px;
+ /*   text-transform: uppercase;
+    text-decoration: underline; */
+}
+```
+
+## Dimensiones fijas para elementos
+
+Todos los elementos html comparten algunas propiedades de estilo, entre éstas se encuentran las propiedades relacionadas con sus dimensiones: **width** \(ancho\) y **height** \(alto\).
+
+Al manipular las propiedades de dimensiones hay que tener en cuenta que si los contenidos de los elementos que estamos estilizando, son más grandes que las dimensiones que hemos indicado, se pudieran generar resultados inesperados en la apariencia, como solapamiento o desbordamiento.
+{% endtab %}
 {% endtabs %}
 
 
