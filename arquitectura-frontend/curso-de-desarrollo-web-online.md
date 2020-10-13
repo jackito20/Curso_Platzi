@@ -573,8 +573,129 @@ h1{
 Todos los elementos html comparten algunas propiedades de estilo, entre éstas se encuentran las propiedades relacionadas con sus dimensiones: **width** \(ancho\) y **height** \(alto\).
 
 Al manipular las propiedades de dimensiones hay que tener en cuenta que si los contenidos de los elementos que estamos estilizando, son más grandes que las dimensiones que hemos indicado, se pudieran generar resultados inesperados en la apariencia, como solapamiento o desbordamiento.
+
+## Backgrounds de color e imagen
+
+Algunas de las propiedades de css relacionadas con la apariencia del fondo de los elementos son:
+
+* **background**: con la que se puede indicar un color, o usada de manera extendida, puede incluir color de fondo, url de la imagen, posición y modo de repetición de la imagen.
+* **background-image**: contiene la url que se usará como fondo del elemento.
+* **background-color**: indica el color de fondo, se puede usar en combinación con la imagen.
+* **background-size**: se puede indicar en valores de alto y ancho o en alguna de las palabras claves permitidas: cover o contain.
+* **background-position**: indica la posición de la imagen dentro del elemento, puede indicarse en unidades o en palabras claves como center, left, top y right.
+* **background-repeat**: indica el método de repetición de la imagen de fondo, puede ser: repeat, repeat-x, repeat-y o no-repeat.
+
+```text
+
+h1{
+    font-size: 40px;
+    line-height: 1.5em;
+    letter-spacing: -.2px;
+    color: #fff;
+}
+
+h1 strong{
+    color: #026fff;
+}
+
+.hero{
+    height: 300px;
+    background-image: url('../images/hero.jpg');
+    background-color: #1b2127;
+    background-size: 500px, 400px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+.header{
+    background-color: #1b2127;
+    color: #fff;
+}
+  
+.header a{
+    color: #fff;
+    text-decoration: none;
+}
+```
+
+## Bordes
+
+Todos los elementos html admiten la propiedad de css **border**, que define la apariencia que tendrá el contorno del componente.  
+El borde puede ser de muchos estilos, y al igual que las propiedades margin y padding que aprenderás más adelante, a los bordes se les puede colocar estilos tanto de forma general con la propiedad **border**, como de acuerdo al lado del elemento que se indique: border-top, border-right, border-bottom y border-left.
+
+Con la propiedad **border-radius** se define el redondeado de las esquinas de los bordes.
+
+```css
+.project{
+    /*  border-top: 10px solid red;
+      border-right: 10px solid green;
+      border-left: 10px solid blue;
+      border-bottom: 10px solid yellow;*/
+      /*border-color: #027fff ; */
+      /*border-top-color: red;
+      border-top-width: 15px;
+      border-top-style: solid; */
+      border: 1px solid gray;
+      border-radius: 10px;  
+}
+```
+
+## Márgenes
+
+Los márgenes en CSS son el espacio que separa a los elementos html entre sí. Hay elementos de html que traen márgenes predefinidos \(por defecto\) en los estilos propios del navegador como el caso de: body, h1, h2, h3, h4, h5, h6, ol, ul, li, p, y muchos otros.
+
+Cuando hay dos márgenes de elementos diferentes que colindan entre sí, se presenta una situación llamada ““margin collapsing”” en la que el mayor margen de los dos se superpone al otro.
+
+Se puede asignar una medida de margin para los cuatro lados del elemento, o márgenes individuales para cada uno de los lados con: margin-top, margin-right, margin-bottom y margin-left.
+
+Se puede centrar un elemento html colocándole el valor de **margin: 0 auto**, cuando dicho elemento tiene display _block_.
+
+## Modelo de caja
+
+El modelo de caja es un concepto teórico de css que representa a cada elemento html en base sus propiedades de: **margin**, **border**, **padding** y **dimensiones** \(alto y ancho\).  
+Para visualizar un elemento html en su representación como modelo de caja debemos irnos a la parte baja de la sección _styles_ del inspector de elementos, o en la sección llamada **Computed**.
+
+En el modelo de caja, el **ancho total** de un _elemento html_ equivale a la sumatoria de los valores de: **width**, **padding-left**, **padding-right**, **border-left-width**, **border-right-width**. De manera similar aplica para el **alto total** de cada _elemento_. Aunque **margin-left** y **margin-right**, forman parte del modelo de caja, no se incluyen para el calculo del ancho total.
+
+Con la propiedad **box-sizing**, y en particular con el valor **border-box** de esta propiedad, podemos modificar el comportamiento del modelo de caja para que nuestro elemento nunca supere el tamaño máximo que le hayamos definido en **width** y **height**. Esta es la opción recomendada para trabajar.
+
+## Tipos de display
+
+Display es la propiedad de css que indica cómo debe ser mostrado un elemento html. Todos los elementos tienen algún tipo de display. Si un elemento no se ve en pantalla es porque seguramente su display es none.
+
+Los valores más comunes que puede recibir la propiedad **display** son:
+
+* **block**: el elemento intenta abarcar todo el ancho posible.
+* **inline**: reduce su tamaño exclusivamente hasta lo que abarca su contenido, descartando las propiedades width y height.
+* **inline-block**: combina lo mejor de block e inline, ya que respeta las dimensiones indicadas en las propiedades width y height, pero coloca el elemento en línea \(al costado\) de elementos hermanos que también tengan display: inline o inline-block.
+* **flex**: asume algunas propiedades por defecto que favorecen la alineación de los elementos internos.
+* **grid**: similar a flex, asume algunas propiedades por defecto organizando los contenidos en filas y columnas.
+* **none**: oculta el elemento.
+
+![](../.gitbook/assets/image%20%289%29.png)
+
+## Propiedades de flexbox
+
+Flexbox se refiere al tipo de display en css que permite un manejo _flexible_ de la alineación, dimensionamiento y distribución de elementos html.
+
+Esta propiedad se aplica a un elemento padre, pero va a afectar principalmente a sus elementos hijos directos. Por defecto, los elementos internos quedan alineados unos seguidos de los otros. El comportamiento del modelo de caja de estos elementos hijos también se ha modificado, ya que pierden el efecto de su propiedad margin.
+
+Los elementos hijos de un padre con propiedad **display: flex** tienen a su disposición algunas nuevas propiedades que aportan mayor flexibilidad a su comportamiento. Una de estas propiedades es **flex-shrink** que, junto a la propiedad **flex-wrap** del padre, permite adaptar y distribuir los elementos de manera dinámica en el espacio horizontal disponible hasta ocupar todo el espacio, y luego pasar a ocupar dinámicamente las siguiente filas hacia abajo.
+
+```css
+.padre{
+	display: flex;
+	flex-wrap: wrap;
+}
+.hijo{
+	flex-shrink: 0;
+}
+```
+
+![](../.gitbook/assets/image%20%288%29.png)
 {% endtab %}
 {% endtabs %}
+
+
 
 
 
