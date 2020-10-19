@@ -30,6 +30,8 @@ Las tres tecnologías básicas que debe conocer y manejar un **Frontend** son:
 * **CSS**: hojas de estilos cascada, el diseño hecho código.
 * **JavaScript**: es el único lenguaje que funciona actualmente dentro de los navegadores de manera nativa."
 
+[https://github.com/elyager-forks/desarrollo-web-portafolio](https://github.com/elyager-forks/desarrollo-web-portafolio)
+
 ## Plan de estudios para ser un gran desarrollador web
 
 En [Platzi.com](http://platzi.com/) tienes todos los cursos necesarios para convertirte en un gran **desarrollador web**:
@@ -692,6 +694,36 @@ Los elementos hijos de un padre con propiedad **display: flex** tienen a su disp
 ```
 
 ![](../.gitbook/assets/image%20%288%29.png)
+
+
+
+## Alineando elementos de forma horizontal
+
+La propiedad de css que nos permite definir la forma en que se alinearán o distribuirán los hijos de un elemento al que se le ha asignado un _display flex_ es: **justify-content**. Y puede tomar entre otros valores, los siguientes:
+
+* **flex-start**: para alinear todos los elementos hacia el inicio del espacio disponible.
+* **flex-end**: para alinear todos los elementos hacia el final, a la derecha.
+* **center**: para alinear todos los elementos al centro del espacio disponible.
+* **space-between**: para distribuir los elementos con un espacio proporcional e igual entre ellos.
+* **space-evenly**: para distribuir los elementos con un espacio proporcional e igual entre ellos \(incluyendo el primer y último elementos con respecto a los extremos del espacio disponible\).
+* **space-around**: similar a _space-evenly_ pero tanto en el primero como en el último elemento, el espacio hacia los extremos es la mitad del espacio usado entre los elementos.
+
+## Alineando elementos de forma vertical
+
+Similar a como sucede con _justify-content_, es posible alinear y distribuir los elementos internos en el espacio vertical disponible usando la propiedad **align-items**, que puede tomar también los valores de: **flex-start**, **flex-end** y **center**.
+
+Algo que es muy importante y se debe tener en cuenta a la hora de usar **align-items** y **justify-content** es que dependiendo de la propiedad **flex-direction** que se haya definido, el efecto de ambos se invierte, no en cuanto a sus elementos internos, sino en cuanto a si se debe usar uno u otro de manera vertical u horizontal.
+
+_IMPORTANTE_: Cuando la propiedad **flex-direction** se ha definido como **column**, la propiedad **justify-content** ya no va a aplicar sobre la alineación horizontal, sino sobre la vertical. Y **align-items** ya no aplicaría sobre la alineación vertical sino la horizontal. Se intercambian sus efectos.
+
+Para centrar completamente los elementos internos de manera vertical y horizontal en su elemento padre, debemos usar el valor **center** en ambas propiedades.  
+
+
+## Estilos de la sección principal y de footer
+
+En esta clase aplicaremos a nuestro proyecto los estilos necesarios para que la sección principal o **hero** de nuestro portafolio se vea correctamente. También completaremos la información de nuestro footer y le aplicaremos los respectivos estilos.
+
+En esta clase vemos que además de las propiedades relacionadas con _display:flex_, en lo que se refiere a la alineación de elementos internos, existen también propiedades equivalentes que nos permite alinear textos dentro de un contenedor, estas propiedades son: **text-align** y **vertical-align**.
 {% endtab %}
 {% endtabs %}
 
