@@ -160,7 +160,9 @@ Tips para construir buenos Buyer Personas:
 
 Para este desafío debes tomarte el tiempo necesario para desarrollar tus 2 o 3 buyer personas. Investiga cuáles son los gustos e intereses de tu audiencia y cómo tu producto o servicio puede resolver estos problemas.
 
-Por último, recuerda mostrarnos tu solución en la sección de los comentarios.  
+Por último, recuerda mostrarnos tu solución en la sección de los comentarios.
+
+[https://www.hubspot.com/make-my-persona](https://www.hubspot.com/make-my-persona)  
 {% endtab %}
 
 {% tab title="Second Tab" %}
