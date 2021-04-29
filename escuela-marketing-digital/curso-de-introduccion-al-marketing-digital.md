@@ -165,8 +165,28 @@ Por último, recuerda mostrarnos tu solución en la sección de los comentarios.
 [https://www.hubspot.com/make-my-persona](https://www.hubspot.com/make-my-persona)  
 {% endtab %}
 
-{% tab title="Second Tab" %}
+{% tab title="Estrategias Inbound" %}
+### ¿Qué es el marketing de contenidos?
 
+**Marketing de Contenidos** es una estrategia de marketing digital que se basa en la creación y distribución de contenido relevante para un publico objetivo con el fin de impulsar a futuros clientes o fidelizar a los que ya tenemos.
+
+El funnel de marketing es una estrategia fundamental en el marketing de contenidos, tiene lo siguientes elementos:
+
+* **Atracción:** Vas a hablar a una audiencia que NO te conoce y está buscando información en un mar de contenidos.
+* **Persuasión:** Usando tu contenido tienes que mostrar los mejores atributos de tu marca.
+* **Conversión:** Necesitas que la venta se concrete, ya sea con ofertas especiales u otro tipo de estimulo comercial.
+* **Fidelización:** Tus clientes actuales deben convertirse en ““embajadores de la marca””, es decir, que recomienden tu servicio con sus amigos y conocidos por haber tenido una muy buena experiencia contigo.
+
+![](../.gitbook/assets/image%20%2834%29.png)
+
+El marketing de contenidos usa el modelo de cascada de contenidos. Comienza con contenido original que debemos **reconvertir** a distintos tipos de formatos: videos cortos, infografias o e-books. El contenido reconvertido lo vamos a **distribuir** por canales de estrategias inbound y outbound marketing, como posts, newsletters, landing pages o la prensa. Por último, vamos a **capitalizar** este contenido: la producción y distribución de contenido debe conseguir objetivos concretos, generar leads, suscriptores, trafico, descargas o enriquecer nuestras bases de datos.
+
+Si quieres profundizar más sobre el tema de Marketing de Contenidos ingresa a: [https://platzi.com/clases/contenido/](https://platzi.com/clases/contenido/)  
+Si quieres profundizar más sobre el tema de Creación y Optimización del Funnel de Ventas [https://platzi.com/clases/funnel/](https://platzi.com/clases/funnel/)
+
+**Lecturas recomendadas**
+
+[![](https://www.google.com/s2/favicons?domain=https://static.platzi.com/static/images/logos/platzi_favicon.png)Curso de Content Marketinghttps://platzi.com/clases/contenido/](https://platzi.com/clases/contenido/)[![](https://www.google.com/s2/favicons?domain=https://static.platzi.com/static/images/logos/platzi_favicon.png)Curso de Estrategia y Creación de Contenido Digitalhttps://platzi.com/clases/contenidos-digitales/](https://platzi.com/clases/contenidos-digitales/)[![](https://www.google.com/s2/favicons?domain=//static.platzi.com/media/favicons/platzi_favicon.png)Qué es la cascada de contenido y cómo aplicarlahttps://platzi.com/blog/cascada-de-contenido-y-como-aplicarla/](https://platzi.com/blog/cascada-de-contenido-y-como-aplicarla/)
 {% endtab %}
 {% endtabs %}
 

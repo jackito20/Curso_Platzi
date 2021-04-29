@@ -17,3 +17,7 @@
 
 * [Curso de Introducción al Marketing Digital](escuela-marketing-digital/curso-de-introduccion-al-marketing-digital.md)
 
+## Escuela de Publicidad Digital
+
+* [Curso Gratis de Marca Personal](escuela-de-publicidad-digital/curso-gratis-de-marca-personal.md)
+
