@@ -1,12 +1,8 @@
 # Table of contents
 
-## Escuela de Javascript
+## ESCUELA DE JAVASCRIPT
 
-* [Escuela de JavaScript](README.md)
-
-***
-
-* [Curso de Prework Buenas Prácticas y Entorno de Desarrollo](curso-de-prework-buenas-practicas-y-entorno-de-desarrollo.md)
+* [Curso de Prework Buenas Prácticas y Entorno de Desarrollo](README.md)
 
 ## Arquitectura Frontend
 
