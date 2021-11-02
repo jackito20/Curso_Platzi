@@ -15,8 +15,8 @@ description: >-
 
 jQuery es una librería de JavaScript que hizo su lanzamiento en el año 2006 con el fin de resolver diferentes problemáticas:
 
-• Una misma forma de acceder al DOM.  
-• Poder interactuar con datos de un servidor.  
+• Una misma forma de acceder al DOM.\
+• Poder interactuar con datos de un servidor.\
 • Crear animaciones.
 
 El problema con jQuery surgió cuando se empezó a exagerar su uso y darle menor importancia a aprender JavaScript. Esto genero malos hábitos de aprendizaje y hasta en algunos casos no diferenciar jQuery de JavaScript.
@@ -27,17 +27,18 @@ Aun con estas nuevas librerías, seguía sin resolverse el problema de hacer que
 
 Por eso en este curso aprenderás a NO depender de ninguna librería, las ventajas de esto son:
 
-• Reutilizar conocimientos.  
-• Poder implementar soluciones sin dependencias.  
+• Reutilizar conocimientos.\
+• Poder implementar soluciones sin dependencias.\
 • Estar más capacitado para las grandes empresas.
 
-![](../.gitbook/assets/image%20%282%29.png)
+![](<../.gitbook/assets/image (2).png>)
 
 ## Presentación del proyecto
 
 Vamos a ver el proyecto en el que estaremos trabajando durante este curso. Te voy a entregar la maquetación previamente hecha y estaremos trabajando con JS para dar dinamismo a la página.
 
-Para este curso primero vamos a hacer todo esto en Vanilla JS, y te esteremos dando consejos de cómo hacer estos ejercicios con Jquery.  
+Para este curso primero vamos a hacer todo esto en Vanilla JS, y te esteremos dando consejos de cómo hacer estos ejercicios con Jquery.\
+
 {% endtab %}
 
 {% tab title="De jQuery a JavaScript" %}
@@ -48,7 +49,8 @@ En la primera parte de este curso vamos a buscar traer datos de un servicio exte
 Dentro de JavaScript tenemos tres formas de declarar una variable las cuales son: var, const y let.
 
 * var era la forma en que se declaraban las variables hasta ECMAScript 5.
-* const y let es la forma en que se declaran las variables a partir de ECMAScript 6, const sirve para declarar variables que nunca van a ser modificadas y en - cambio let son variables que pueden ser modificadas.
+* const y let es la forma en que se declaran las variables a partir de ECMAScript 6, const sirve para declarar variables que nunca van a ser modificadas y en -\
+  cambio let son variables que pueden ser modificadas.
 
 Las funciones son piezas de código que puedes reutilizar y se declaran con la palabra function.
 
@@ -64,7 +66,7 @@ Nuestra promesa va a tener dos métodos para saber si todo salió bien o fallo. 
 
 Dentro de JavaScript tenemos dos funciones para ejecutar una función después de algún tiempo, estas funciones son:
 
-• setInterval: ejecutara una función cada x tiempo.  
+• setInterval: ejecutara una función cada x tiempo.\
 • setTimeout: ejecutara una función después de x tiempo.
 
 Si queremos resolver varias promesas a la misma vez, Promise cuenta con un método llamado all que recibe un array de promesas como parámetro. Este método se termina cuando todas las promesas del array se terminan de ejecutar. Si una de las promesas falla entonces el método all saltara un error mandándote al método catch.
@@ -115,7 +117,7 @@ Una característica muy solicitada en cualquier sitio dinámico es solicitar dat
 
 Ajax recibe dos parámetros los cuales son la url de la API y un objeto donde pondrás la configuración que se usara para realizar la petición. En la configuración se añaden dos funciones para manejar cuando la petición se realizo correctamente y cuando falla.
 
-JavaScript internamente cuenta con una función llamada fetch que también realiza peticiones a una API. Al igual que Ajax necesita dos parámetros, una url y una configuración, pero si solo le mandas la url fetch usará una configuración por defecto donde el método HTTP será GET.  
+JavaScript internamente cuenta con una función llamada fetch que también realiza peticiones a una API. Al igual que Ajax necesita dos parámetros, una url y una configuración, pero si solo le mandas la url fetch usará una configuración por defecto donde el método HTTP será GET.\
 fetch te regresa una promesa, esa promesa al resolverse te da los datos de respuesta y tiene un método llamado json que te regresa otra promesa con los datos en formato JSON.
 
 Las promesas resuelven el problema del Callback Hell haciendo que una promesa pueda devolver otra promesa y en lugar de ser anidadas como los callback, estas promesas son encadenadas.
@@ -171,9 +173,9 @@ Vamos a realizar peticiones con fetch a la API de yts para pedirle películas se
 })()
 ```
 
-Sin la palabra reservada await, la funcion getData\(\) devuelve una promesa que puede ser tratada con .then\(\) y .catch\(\)
+Sin la palabra reservada await, la funcion getData() devuelve una promesa que puede ser tratada con .then() y .catch()
 
-![](../.gitbook/assets/image%20%286%29.png)
+![](<../.gitbook/assets/image (6).png>)
 
 ## Selectores
 
@@ -183,7 +185,7 @@ Para PlatziVideo necesitamos un selector de un contenedor para ponerle dentro la
 
 En jQuery hacemos un selector de la siguiente forma:
 
-```text
+```
 const $home = $('.home');
 ```
 
@@ -191,10 +193,10 @@ Por convención una variable que este represente un objeto del DOM lleva el sign
 
 Dentro de JavaScript existen distintas funciones para hacer selectores, entre ellas se encuentra:
 
-• getElementById: recibe como parámetro el id del objeto del DOM que estás buscando. Te regresa un solo objeto.  
-• getElementsByTagName: recibe como parámetro el tag que estas buscando y te regresa una colección html de los elementos que tengan ese tag.  
-• getElementsByClassName: recibe como parámetro la clase y te regresa una colección html de los elementos que tengan esa clase.  
-• querySelector: va a buscar el primer elemento que coincida con el selector que le pases como parámetro.  
+• getElementById: recibe como parámetro el id del objeto del DOM que estás buscando. Te regresa un solo objeto.\
+• getElementsByTagName: recibe como parámetro el tag que estas buscando y te regresa una colección html de los elementos que tengan ese tag.\
+• getElementsByClassName: recibe como parámetro la clase y te regresa una colección html de los elementos que tengan esa clase.\
+• querySelector: va a buscar el primer elemento que coincida con el selector que le pases como parámetro.\
 • querySelectorAll: va a buscar todos los elementos que coincidan con el selector que le pases como parámetro.
 
 ```javascript
@@ -243,7 +245,7 @@ Vamos a crear una plantilla con nuestro elemento base, dicha plantilla será rec
 
 Dentro de jQuery, la creación de un template seria con un texto base y si nuestro texto cuenta con distintas líneas más aparte tuviera valores dinámicos se vería de la siguiente forma:
 
-```text
+```
 ‘<div class=”container”>’ +
     ‘<p id=’+ id +’>Hola Mundo<p>’ +
 ‘<div>’
@@ -251,7 +253,7 @@ Dentro de jQuery, la creación de un template seria con un texto base y si nuest
 
 Desde ECMAScript 6 contamos con una nueva característica llamada template literals que se representan con las comillas invertidas \`\`, el ejemplo anterior pasaría a verse de esta forma:
 
-```text
+```
 `<div class=”container”>
     <p id=${id}>Hola Mundo<p>
 <div>`
@@ -286,9 +288,9 @@ Desde ECMAScript 6 contamos con una nueva característica llamada template liter
 
 ## Creación de DOM
 
-La plantilla que creamos la clase anterior de momento es puro texto, no es un elemento HTML que podamos poner dentro del navegador pues si los imprimimos en el navegador lo único que veremos es texto.  
-Vamos a insertar la plantilla dentro de nuestro container, para ello recuerda que JavaScript se lee de arriba hacia abajo entonces debemos declarar la variable del container antes de llamar a algún método de este.  
-Para convertir nuestra plantilla de texto a un Document Object Model necesitamos crear dentro de memoria un documento HTML, esto es posible gracias al método document.implementation.createHTMLDocument. A este documento HTML le vamos a añadir al body, mediante innerHTML, nuestra plantilla de texto. Una vez añadida le pedimos al body el primer elemento hijo que tenga y este lo añadimos a nuestro container.  
+La plantilla que creamos la clase anterior de momento es puro texto, no es un elemento HTML que podamos poner dentro del navegador pues si los imprimimos en el navegador lo único que veremos es texto.\
+Vamos a insertar la plantilla dentro de nuestro container, para ello recuerda que JavaScript se lee de arriba hacia abajo entonces debemos declarar la variable del container antes de llamar a algún método de este.\
+Para convertir nuestra plantilla de texto a un Document Object Model necesitamos crear dentro de memoria un documento HTML, esto es posible gracias al método document.implementation.createHTMLDocument. A este documento HTML le vamos a añadir al body, mediante innerHTML, nuestra plantilla de texto. Una vez añadida le pedimos al body el primer elemento hijo que tenga y este lo añadimos a nuestro container.\
 Este flujo es la magia que hay detrás de varias librerías y frameworks que nos ayudan a crear interfaces.
 
 ```javascript
@@ -374,10 +376,10 @@ En esta clase vamos a modificar nuestro código que se encarga de renderizar la 
 
 ## Eventos
 
-Toda aplicación web necesita lidiar con interacciones del usuario, desde un click hasta arrastrar algún elemento, estas interacciones son escuchadas por el navegador mediante algo llamado eventos. Existen muchos tipos de eventos, el más común es el evento de click.  
-En esta clase vamos a trabajar con el evento click y submit.  
-Para que un elemento HTML pueda escuchar algún evento debemos usar el método addEventListener. Este método recibe dos parámetros, el nombre del evento que va a escuchar y la función que se va a ejecutar al momento de que se accione el evento.  
-La página se recarga al momento de ejecutarse el evento submit, para evitar esto debemos quitarle la acción por defecto que viene en submit usando el método event.preventDefault\(\).  
+Toda aplicación web necesita lidiar con interacciones del usuario, desde un click hasta arrastrar algún elemento, estas interacciones son escuchadas por el navegador mediante algo llamado eventos. Existen muchos tipos de eventos, el más común es el evento de click.\
+En esta clase vamos a trabajar con el evento click y submit.\
+Para que un elemento HTML pueda escuchar algún evento debemos usar el método addEventListener. Este método recibe dos parámetros, el nombre del evento que va a escuchar y la función que se va a ejecutar al momento de que se accione el evento.\
+La página se recarga al momento de ejecutarse el evento submit, para evitar esto debemos quitarle la acción por defecto que viene en submit usando el método event.preventDefault().\
 
 
 ```javascript
@@ -390,8 +392,8 @@ La página se recarga al momento de ejecutarse el evento submit, para evitar est
 
 ## Clases y estilos CSS
 
-En esta clase vamos a aprender a manipular las clases de CSS y estilos de nuestros elementos mediante JavaScript.  
-Dentro de cada elemento tenemos un método llamado classList, con este podemos ver las clases que tiene nuestro elemento y además llamar a otros métodos para añadir, borrar o hacer toggle a alguna clase.  
+En esta clase vamos a aprender a manipular las clases de CSS y estilos de nuestros elementos mediante JavaScript.\
+Dentro de cada elemento tenemos un método llamado classList, con este podemos ver las clases que tiene nuestro elemento y además llamar a otros métodos para añadir, borrar o hacer toggle a alguna clase.\
 De igual forma podemos acceder a todas las propiedades de CSS algún elemento mediante element.style.
 
 **Truquitos con el Chrome Dev Tools**
@@ -419,8 +421,8 @@ $form.addEventListener('submit', (event) => {
 
 ## Creación de elementos y asignación de atributos
 
-Vamos a crear un elemento HTML sin usar un template string. Para crear el elemento desde cero vamos a usar el método document.createElement, este recibe como parámetro la etiqueta html del elemento que se quiere crear, no funciona mandándole el template string.  
-Para añadirle un atributo al elemento que acabamos de crear haremos uso del método setAttribute. Este recibe dos parámetros, uno indicando el nombre del atributo que vamos a añadir y el segundo parámetro indicando el valor de dicho atributo.  
+Vamos a crear un elemento HTML sin usar un template string. Para crear el elemento desde cero vamos a usar el método document.createElement, este recibe como parámetro la etiqueta html del elemento que se quiere crear, no funciona mandándole el template string.\
+Para añadirle un atributo al elemento que acabamos de crear haremos uso del método setAttribute. Este recibe dos parámetros, uno indicando el nombre del atributo que vamos a añadir y el segundo parámetro indicando el valor de dicho atributo.\
 Vamos a crear una función para poder añadir múltiples atributos a un solo elemento.
 
 ```javascript
@@ -496,7 +498,7 @@ Vamos a crear una función para poder añadir múltiples atributos a un solo ele
 
 ## DataSet
 
- `Dataset` permite acceder a un objeto con todos los atributos `data` de un elemento DOM.
+&#x20;`Dataset` permite acceder a un objeto con todos los atributos `data` de un elemento DOM.
 
 ```javascript
 <div id="element" data-id="10" data-category="action">
@@ -691,8 +693,6 @@ JSON.parse(window.localStorage.getItem("objeto"));
 
 
 
-  
-
-
+\
 
 

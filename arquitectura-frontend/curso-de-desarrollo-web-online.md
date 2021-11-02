@@ -15,14 +15,14 @@ El desarrollo web tiene que ver con todo lo que percibimos a través del navegad
 
 Para comprender cómo funciona internet necesitamos conocer tres grandes conceptos:
 
-* **Clients** \(clientes\): son los dispositivos a través de los cuales accedemos a los sitios web: un computador desktop, un teléfono, una laptop, etc.
+* **Clients** (clientes): son los dispositivos a través de los cuales accedemos a los sitios web: un computador desktop, un teléfono, una laptop, etc.
 * **Internet**: es toda la red formada por servidores y clientes que proveen y consumen contenidos web y se comunican entre sí a nivel global.
-* **Server** \(servidor\): es un computador, ubicado en alguna parte de la red, que está prendido todo el tiempo, en el que se alojan o almacenan sitios web y sus recursos y al cual se accede a través de nombres de dominio \(.com, .net, .pe, etc.\). También se les conoce como hosting.
+* **Server** (servidor): es un computador, ubicado en alguna parte de la red, que está prendido todo el tiempo, en el que se alojan o almacenan sitios web y sus recursos y al cual se accede a través de nombres de dominio (.com, .net, .pe, etc.). También se les conoce como hosting.
 
 Profesiones dentro del Desarrollo Web:
 
-* **Frontend**: son los encargados de cuidar toda la apariencia y experiencia de usuario. Su misión es pasar todo el diseño gráfico de un sitio o aplicación web, a código, y proveer toda la interactividad a los clientes. Esta rama se puede subdividir en algunas especializaciones como: Arquitecto Frontend, Desarrollador JavaScript \(frontend\), etc.
-* **Backend**: resguardan los datos y la seguridad de las aplicaciones y sitios web. Su misión es crear y mantener toda la parte del sitio web que sucede en los servidores. Pueden especializarse aún más en: SysAdmis, DevOps, Desarrollador JavaScript \(backend\), entre otros.
+* **Frontend**: son los encargados de cuidar toda la apariencia y experiencia de usuario. Su misión es pasar todo el diseño gráfico de un sitio o aplicación web, a código, y proveer toda la interactividad a los clientes. Esta rama se puede subdividir en algunas especializaciones como: Arquitecto Frontend, Desarrollador JavaScript (frontend), etc.
+* **Backend**: resguardan los datos y la seguridad de las aplicaciones y sitios web. Su misión es crear y mantener toda la parte del sitio web que sucede en los servidores. Pueden especializarse aún más en: SysAdmis, DevOps, Desarrollador JavaScript (backend), entre otros.
 
 Las tres tecnologías básicas que debe conocer y manejar un **Frontend** son:
 
@@ -34,7 +34,7 @@ Las tres tecnologías básicas que debe conocer y manejar un **Frontend** son:
 
 ## Plan de estudios para ser un gran desarrollador web
 
-En [Platzi.com](http://platzi.com/) tienes todos los cursos necesarios para convertirte en un gran **desarrollador web**:
+En [Platzi.com](http://platzi.com) tienes todos los cursos necesarios para convertirte en un gran **desarrollador web**:
 
 * [Desarrollo Web](https://platzi.com/cursos/html5-css3/)
 * [Git y Github](https://platzi.com/cursos/git-github/)
@@ -76,28 +76,28 @@ A continuación, un ejemplo sencillo de la estructura del DOM:
 
 ## Etiquetas
 
-Las etiquetas son la representación básica de la información en un documento html. Sirven para crear y organizar el contenido.  
+Las etiquetas son la representación básica de la información en un documento html. Sirven para crear y organizar el contenido.\
 La sintaxis general de una etiqueta es:
 
-```text
+```
 <nombre>contenido</nombre>
 ```
 
 Hay ciertas etiquetas que tienen una sintaxis diferente, ya que se cierran en sí mismas; es decir, no tienen etiqueta de cierre:
 
-```text
+```
 <nombre />
 ```
 
 Algunas de las etiquetas más conocidas y usadas son:
 
-**Etiquetas de cabecera \(head\):**
+**Etiquetas de cabecera (head):**
 
 * **`doctype`**: indica al navegador el tipo de documento que se está mostrando.
 * **`html`**: es la etiqueta que envuelve todo el documento
 * **`head`**: es la cabecera del documento y contiene sub etiquetas que describen al documento o incluyen recursos adicionales.
 
-**Etiquetas del cuerpo del documento \(body\):**
+**Etiquetas del cuerpo del documento (body):**
 
 * **`article`**: diferencia partes del contenido que pueden vivir por sí mismas.
 * **`nav`**: para hacer menús de navegación.
@@ -110,11 +110,11 @@ Algunas de las etiquetas más conocidas y usadas son:
 * **`ul y ol`**: listas de items.
 * **`div`**: cualquier división para organizar el contenido.
 
- [HTML5 Doctor, helping you implement HTML5 today](http://html5doctor.com/)
+&#x20;[HTML5 Doctor, helping you implement HTML5 today](http://html5doctor.com)
 
 ## Estructura de nuestro Sitio Web
 
-El proyecto que desarrollaremos en este curso se trata de un Portafolio Personal, incluirá una cabecera, navegación, un hero \(área visual con información destacada\), un área de proyectos y otra para eventos, y finalmente un pié de página con un formulario de contacto y enlaces a redes sociales.
+El proyecto que desarrollaremos en este curso se trata de un Portafolio Personal, incluirá una cabecera, navegación, un hero (área visual con información destacada), un área de proyectos y otra para eventos, y finalmente un pié de página con un formulario de contacto y enlaces a redes sociales.
 
 El archivo **index.html** es el archivo que el navegador abre por defecto al acceder a un directorio en un servidor web.
 
@@ -219,13 +219,13 @@ La estructura html de nuestro proyecto usa una o más de las siguientes etiqueta
 
 ## Atributos HTML
 
-Los atributos son valores agregados a las etiquetas \(tags\) html que extienden su habilidad o funcionalidad con información específica.
+Los atributos son valores agregados a las etiquetas (tags) html que extienden su habilidad o funcionalidad con información específica.
 
 A continuación, un ejemplo de los atributos más comunes y usados en algunas etiquetas:
 
 Para **img**:
 
-* **src**: específica la _ruta_ de la imagen que será mostrada a través de esta etiqueta. La ruta puede ser _absoluta_ \(cunado especifica una dirección exacta, incluyendo el prefijo _http\(s\)_ \) o _relativa_ \(cuando la referencia a la ubicación de la imagen parte de la ubicación del archivo actual\).
+* **src**: específica la _ruta_ de la imagen que será mostrada a través de esta etiqueta. La ruta puede ser _absoluta_ (cunado especifica una dirección exacta, incluyendo el prefijo _http(s)_ ) o _relativa_ (cuando la referencia a la ubicación de la imagen parte de la ubicación del archivo actual).
 * **alt**: indica un texto alternativo que será mostrado en lugar de la imagen cuando ésta no pueda ser mostrada.
 * **width**: ancho de la imagen en pixeles.
 * **height**: alto de la imagen en pixeles.
@@ -234,11 +234,11 @@ Para **link**, en la cabecera _head_ del documento:
 
 * **rel**: indica la relación del recurso con el contenido.
 * **type**: indica el tipo de recurso / formato.
-* **href**: indica la ubicación \(url\) del recurso enlazado.
+* **href**: indica la ubicación (url) del recurso enlazado.
 
 Para **meta**, también en la cabecera _head_ del documento:
 
-* **charset**: indica la tabla de caracteres \(utf-8 para caracteres latinos\) usada en el documento.
+* **charset**: indica la tabla de caracteres (utf-8 para caracteres latinos) usada en el documento.
 
 Para **a**:
 
@@ -311,7 +311,7 @@ Para **a**:
 
 ## Formularios HTML
 
-Los Formularios en html son unidades de información que nos permiten recolectar información para enviarlos al propietario del website o a un servicio externo. Esta formado por dos partes o contextos: una parte donde se hace el ingreso y modelación de esos datos \(en el frontend\), y otra parte que se encarga de enviar, procesar y almacenar esos datos \(en el backend\).
+Los Formularios en html son unidades de información que nos permiten recolectar información para enviarlos al propietario del website o a un servicio externo. Esta formado por dos partes o contextos: una parte donde se hace el ingreso y modelación de esos datos (en el frontend), y otra parte que se encarga de enviar, procesar y almacenar esos datos (en el backend).
 
 Los formularios se crean con la etiqueta **form**. El atributo principal de un formulario es _action_, ya que contiene la ruta a la que serán enviados los datos recolectados.
 
@@ -331,13 +331,13 @@ Los elementos creados con la etiqueta _label_ muestran un texto que se puede aso
 
 ## Navegación entre secciones
 
-**target**  
+**target**\
 Especifica en donde desplegar la URL enlazada:
 
-\__self:_ Carga la URL en el mismo contexto de navegación que el actual. Este es el comportamiento por defecto.  
-\__blank:_ Carga la URL en un nuevo contexto de navegación. Usualmente es una pestaña, sin embargo, los usuarios pueden configurar los navegadores para utilizar una ventana nueva en lugar de la pestaña.  
-\__parent:_ Carga la URL en el contexto de navegación padre \(parent\) del actual. Si no existe el padre, este se comporta del mismo modo que \_self.  
-\__top:_ Carga la URL en el contexto más alto de navegación \(el cual es un ancestro del actual, y no tiene padre \(parent\)\). Si no hay padre \(parent\), este se comporta del mismo modo que \_self.
+\__self:_ Carga la URL en el mismo contexto de navegación que el actual. Este es el comportamiento por defecto.\
+\__blank:_ Carga la URL en un nuevo contexto de navegación. Usualmente es una pestaña, sin embargo, los usuarios pueden configurar los navegadores para utilizar una ventana nueva en lugar de la pestaña.\
+\__parent:_ Carga la URL en el contexto de navegación padre (parent) del actual. Si no existe el padre, este se comporta del mismo modo que \_self.\
+\__top:_ Carga la URL en el contexto más alto de navegación (el cual es un ancestro del actual, y no tiene padre (parent)). Si no hay padre (parent), este se comporta del mismo modo que \_self.
 
 ```markup
 <nav>
@@ -371,31 +371,31 @@ A **CSS**, se le llama **hojas de estilos en cascada** porque los estilos que se
 
 ## Reglas, selectores, declaraciones, propiedades y valores de CSS
 
-**- ¿Cuál de las 3 formas de insertar estilos HTML es la que se debería utilizar y por qué?**  
+**- ¿Cuál de las 3 formas de insertar estilos HTML es la que se debería utilizar y por qué?**\
 Archivos externos. Porque nos permite tener separado el código HTML del código CSS.
 
-**- ¿Cuáles son las partes de un bloque de código en CSS?**  
-Reglas  
-Selectores  
-Declaraciones  
-Propiedades  
+**- ¿Cuáles son las partes de un bloque de código en CSS?**\
+Reglas\
+Selectores\
+Declaraciones\
+Propiedades\
 Valores
 
-**- ¿Qué es una regla?**  
-Es el conjunto de todas las partes del bloque de código \(selectores, declaraciones, propiedades y valores\)
+**- ¿Qué es una regla?**\
+Es el conjunto de todas las partes del bloque de código (selectores, declaraciones, propiedades y valores)
 
-**- ¿Qué es un selector?**  
+**- ¿Qué es un selector?**\
 Es la forma que usamos en CSS para apuntar hacia uno o varios elementos de HTML. Existen varios tipos de selectores.
 
-**- ¿Cuáles son los tipos de selectores más importantes y qué significan?**  
-De etiqueta = Se usa para apuntar a un tipo de etiqueta de html. No se recomienda usar cuando queremos afectar a una etiqueta y tenemos muchas en nuestro código HTML  
-Descendentes = Se usa para apuntar a un elemento desde el padre hasta el hijo. Este último será al que vayamos a afectar.  
-De id = Se usa cuando queremos afectar únicamente a una etiqueta en concreto, no importa cual sea, desde que se únicamente a ella.  
+**- ¿Cuáles son los tipos de selectores más importantes y qué significan?**\
+De etiqueta = Se usa para apuntar a un tipo de etiqueta de html. No se recomienda usar cuando queremos afectar a una etiqueta y tenemos muchas en nuestro código HTML\
+Descendentes = Se usa para apuntar a un elemento desde el padre hasta el hijo. Este último será al que vayamos a afectar.\
+De id = Se usa cuando queremos afectar únicamente a una etiqueta en concreto, no importa cual sea, desde que se únicamente a ella.\
 De clase = Se usa para afectar a varias etiquetas, las cuales deben tener como atributo class que sirve como apuntador hacia esas etiquetas
 
 **Ejemplos**
 
-++Etiqueta ++
+\++Etiqueta ++
 
 ```css
 /*si ponemos el siguiente código*/
@@ -434,16 +434,16 @@ Class
 }
 ```
 
-**- ¿Qué es una declaración?**  
+**- ¿Qué es una declaración?**\
 Es todo el conjunto de propiedades y valores que se encuentran dentro de las llaves del bloque de código de CSS
 
-**- ¿Qué es una propiedad?**  
+**- ¿Qué es una propiedad?**\
 Son todas las diferentes formas que podemos usar para estilizar los elementos. Su funcionamiento está ligado a los valores
 
-**- ¿Qué son los valores?**  
+**- ¿Qué son los valores?**\
 Son los valores que una propiedad puede tener.
 
-![](../.gitbook/assets/image%20%287%29.png)
+![](<../.gitbook/assets/image (7).png>)
 
 ## Los estilos incluidos por el navegador
 
@@ -469,16 +469,16 @@ Algunos de los estándares más usados para la identificación de clases son:
 {% tab title="Estilos y CSS" %}
 ## Unidades de medida y colores
 
-Hay varias unidades de medida con las que se puede trabajar en CSS: %, em, rem, px, pt, fr, vw, vh  
+Hay varias unidades de medida con las que se puede trabajar en CSS: %, em, rem, px, pt, fr, vw, vh\
 Las medidas más comunes y utilizadas son los pixeles. Un **píxel** es la menor unidad homogénea en color que forma parte de una imagen digital. Es la unidad más práctica y fácil de utilizar y manipular, y es la que utilizaremos mayormente en este curso.
 
 Los colores en CSS pueden ser representados de al menos tres formas diferentes:
 
 * Representados con **palabras claves** para cada color, como: red, green, blue, pink, yellow, black, etc.
-* Usando la composición de tres colores \(**rojo**, **verde** y **azul**\): para esto podemos usar notación hexadecimal o las funciones rgb\(\) y rgba\(\).
-* Usando la composición mediante valores de **Matiz**, **Saturación** y **Luminosidad** con: hls\(\) y hlsa\(\).
+* Usando la composición de tres colores (**rojo**, **verde** y **azul**): para esto podemos usar notación hexadecimal o las funciones rgb() y rgba().
+* Usando la composición mediante valores de **Matiz**, **Saturación** y **Luminosidad** con: hls() y hlsa().
 
-Con respecto a los valores hexadecimales, cada color está representado por 6 digitos, que representan 3 pares de hexadecimales: FF - FF - FF \(rojo, verde y azul\), en el que cada par puede tomar valores hexadecimales entre 00 y FF. Cada uno equivale a valores decimales entre 0 y 255, donde 0 es la ausencia de ese color y 255 la mayor cantidad disponible. De esta manera cada color se forma por la combinación de diferentes proporciones de rojo, verde y azul.
+Con respecto a los valores hexadecimales, cada color está representado por 6 digitos, que representan 3 pares de hexadecimales: FF - FF - FF (rojo, verde y azul), en el que cada par puede tomar valores hexadecimales entre 00 y FF. Cada uno equivale a valores decimales entre 0 y 255, donde 0 es la ausencia de ese color y 255 la mayor cantidad disponible. De esta manera cada color se forma por la combinación de diferentes proporciones de rojo, verde y azul.
 
 * \#000000 es equivalente a Negro
 * \#FF0000 es equivalente a Rojo
@@ -486,15 +486,15 @@ Con respecto a los valores hexadecimales, cada color está representado por 6 di
 * \#0000FF es equivalente a Azul
 * \#FFFFFF es equivalente a Blanco
 
- [&lt;color&gt; - CSS: Cascading Style Sheets \| MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)
+&#x20;[\<color> - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/color\_value)
 
 ## Inspector de elementos
 
 Para ver y depurar el código de una página html, el navegador incluye una herramienta llamada **Inspector de elementos**, o simplemente **inspector**, que abre, en una sección de la ventana, una serie de espacios con información técnica muy detallada sobre todo lo que sucede en el DOM, incluídos los estilos que tienen aplicados cada uno de los elementos del html.
 
-La mayoría de los navegadores incluye algún tipo de **Inspector**, en el curso usamos Google Chrome, pero la misma herramienta \(o similar\) la encuentras en Firefox, Opera, Edge, etc.
+La mayoría de los navegadores incluye algún tipo de **Inspector**, en el curso usamos Google Chrome, pero la misma herramienta (o similar) la encuentras en Firefox, Opera, Edge, etc.
 
-Utilizando el Inspector podemos hacer modificaciones \(temporales\) manualmente en el html de cualquier sitio web, consultar sus estilos y recursos enlazados, hacer pruebas en tiempo real con JavaScript, monitorear variables o eventos entre muchas otras tareas útiles para cualquier desarrollador.
+Utilizando el Inspector podemos hacer modificaciones (temporales) manualmente en el html de cualquier sitio web, consultar sus estilos y recursos enlazados, hacer pruebas en tiempo real con JavaScript, monitorear variables o eventos entre muchas otras tareas útiles para cualquier desarrollador.
 
 ## Tipos de textos personalizados
 
@@ -514,7 +514,7 @@ CSS permite utilizar **fuentes** diferentes a las disponibles en el sistema oper
 
 Al definir el tipo de texto asociado a una clase css con la propiedad **font-family** indicamos al navegador que debe intentar usar esa fuente en particular para darle la apariencia tipográfica a los textos de ese elemento html.
 
-[https://fonts.google.com/](https://fonts.google.com/)
+[https://fonts.google.com/](https://fonts.google.com)
 
 ```markup
 <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
@@ -572,7 +572,7 @@ h1{
 
 ## Dimensiones fijas para elementos
 
-Todos los elementos html comparten algunas propiedades de estilo, entre éstas se encuentran las propiedades relacionadas con sus dimensiones: **width** \(ancho\) y **height** \(alto\).
+Todos los elementos html comparten algunas propiedades de estilo, entre éstas se encuentran las propiedades relacionadas con sus dimensiones: **width** (ancho) y **height** (alto).
 
 Al manipular las propiedades de dimensiones hay que tener en cuenta que si los contenidos de los elementos que estamos estilizando, son más grandes que las dimensiones que hemos indicado, se pudieran generar resultados inesperados en la apariencia, como solapamiento o desbordamiento.
 
@@ -587,7 +587,7 @@ Algunas de las propiedades de css relacionadas con la apariencia del fondo de lo
 * **background-position**: indica la posición de la imagen dentro del elemento, puede indicarse en unidades o en palabras claves como center, left, top y right.
 * **background-repeat**: indica el método de repetición de la imagen de fondo, puede ser: repeat, repeat-x, repeat-y o no-repeat.
 
-```text
+```
 
 h1{
     font-size: 40px;
@@ -621,7 +621,7 @@ h1 strong{
 
 ## Bordes
 
-Todos los elementos html admiten la propiedad de css **border**, que define la apariencia que tendrá el contorno del componente.  
+Todos los elementos html admiten la propiedad de css **border**, que define la apariencia que tendrá el contorno del componente.\
 El borde puede ser de muchos estilos, y al igual que las propiedades margin y padding que aprenderás más adelante, a los bordes se les puede colocar estilos tanto de forma general con la propiedad **border**, como de acuerdo al lado del elemento que se indique: border-top, border-right, border-bottom y border-left.
 
 Con la propiedad **border-radius** se define el redondeado de las esquinas de los bordes.
@@ -643,7 +643,7 @@ Con la propiedad **border-radius** se define el redondeado de las esquinas de lo
 
 ## Márgenes
 
-Los márgenes en CSS son el espacio que separa a los elementos html entre sí. Hay elementos de html que traen márgenes predefinidos \(por defecto\) en los estilos propios del navegador como el caso de: body, h1, h2, h3, h4, h5, h6, ol, ul, li, p, y muchos otros.
+Los márgenes en CSS son el espacio que separa a los elementos html entre sí. Hay elementos de html que traen márgenes predefinidos (por defecto) en los estilos propios del navegador como el caso de: body, h1, h2, h3, h4, h5, h6, ol, ul, li, p, y muchos otros.
 
 Cuando hay dos márgenes de elementos diferentes que colindan entre sí, se presenta una situación llamada ““margin collapsing”” en la que el mayor margen de los dos se superpone al otro.
 
@@ -653,7 +653,7 @@ Se puede centrar un elemento html colocándole el valor de **margin: 0 auto**, c
 
 ## Modelo de caja
 
-El modelo de caja es un concepto teórico de css que representa a cada elemento html en base sus propiedades de: **margin**, **border**, **padding** y **dimensiones** \(alto y ancho\).  
+El modelo de caja es un concepto teórico de css que representa a cada elemento html en base sus propiedades de: **margin**, **border**, **padding** y **dimensiones** (alto y ancho).\
 Para visualizar un elemento html en su representación como modelo de caja debemos irnos a la parte baja de la sección _styles_ del inspector de elementos, o en la sección llamada **Computed**.
 
 En el modelo de caja, el **ancho total** de un _elemento html_ equivale a la sumatoria de los valores de: **width**, **padding-left**, **padding-right**, **border-left-width**, **border-right-width**. De manera similar aplica para el **alto total** de cada _elemento_. Aunque **margin-left** y **margin-right**, forman parte del modelo de caja, no se incluyen para el calculo del ancho total.
@@ -668,12 +668,12 @@ Los valores más comunes que puede recibir la propiedad **display** son:
 
 * **block**: el elemento intenta abarcar todo el ancho posible.
 * **inline**: reduce su tamaño exclusivamente hasta lo que abarca su contenido, descartando las propiedades width y height.
-* **inline-block**: combina lo mejor de block e inline, ya que respeta las dimensiones indicadas en las propiedades width y height, pero coloca el elemento en línea \(al costado\) de elementos hermanos que también tengan display: inline o inline-block.
+* **inline-block**: combina lo mejor de block e inline, ya que respeta las dimensiones indicadas en las propiedades width y height, pero coloca el elemento en línea (al costado) de elementos hermanos que también tengan display: inline o inline-block.
 * **flex**: asume algunas propiedades por defecto que favorecen la alineación de los elementos internos.
 * **grid**: similar a flex, asume algunas propiedades por defecto organizando los contenidos en filas y columnas.
 * **none**: oculta el elemento.
 
-![](../.gitbook/assets/image%20%289%29.png)
+![](<../.gitbook/assets/image (9).png>)
 
 ## Propiedades de flexbox
 
@@ -693,7 +693,7 @@ Los elementos hijos de un padre con propiedad **display: flex** tienen a su disp
 }
 ```
 
-![](../.gitbook/assets/image%20%288%29.png)
+![](<../.gitbook/assets/image (8).png>)
 
 
 
@@ -705,7 +705,7 @@ La propiedad de css que nos permite definir la forma en que se alinearán o dist
 * **flex-end**: para alinear todos los elementos hacia el final, a la derecha.
 * **center**: para alinear todos los elementos al centro del espacio disponible.
 * **space-between**: para distribuir los elementos con un espacio proporcional e igual entre ellos.
-* **space-evenly**: para distribuir los elementos con un espacio proporcional e igual entre ellos \(incluyendo el primer y último elementos con respecto a los extremos del espacio disponible\).
+* **space-evenly**: para distribuir los elementos con un espacio proporcional e igual entre ellos (incluyendo el primer y último elementos con respecto a los extremos del espacio disponible).
 * **space-around**: similar a _space-evenly_ pero tanto en el primero como en el último elemento, el espacio hacia los extremos es la mitad del espacio usado entre los elementos.
 
 ## Alineando elementos de forma vertical
@@ -716,7 +716,7 @@ Algo que es muy importante y se debe tener en cuenta a la hora de usar **align-i
 
 _IMPORTANTE_: Cuando la propiedad **flex-direction** se ha definido como **column**, la propiedad **justify-content** ya no va a aplicar sobre la alineación horizontal, sino sobre la vertical. Y **align-items** ya no aplicaría sobre la alineación vertical sino la horizontal. Se intercambian sus efectos.
 
-Para centrar completamente los elementos internos de manera vertical y horizontal en su elemento padre, debemos usar el valor **center** en ambas propiedades.  
+Para centrar completamente los elementos internos de manera vertical y horizontal en su elemento padre, debemos usar el valor **center** en ambas propiedades.\
 
 
 ## Estilos de la sección principal y de footer
@@ -726,8 +726,6 @@ En esta clase aplicaremos a nuestro proyecto los estilos necesarios para que la 
 En esta clase vemos que además de las propiedades relacionadas con _display:flex_, en lo que se refiere a la alineación de elementos internos, existen también propiedades equivalentes que nos permite alinear textos dentro de un contenedor, estas propiedades son: **text-align** y **vertical-align**.
 {% endtab %}
 {% endtabs %}
-
-
 
 
 

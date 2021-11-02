@@ -27,13 +27,13 @@ El **Marketing Digital** son todos los esfuerzos de marketing que una compañía
 * Conseguir reseñas en sitios especializados
 * Influencer Marketing
 
-![](../.gitbook/assets/image%20%2813%29.png)
+![](<../.gitbook/assets/image (13).png>)
 
-![](../.gitbook/assets/image%20%2830%29.png)
+![](<../.gitbook/assets/image (30).png>)
 
-![](../.gitbook/assets/image%20%2819%29.png)
+![](<../.gitbook/assets/image (19).png>)
 
-![](../.gitbook/assets/image%20%2829%29.png)
+![](<../.gitbook/assets/image (29).png>)
 
 ## ¿Cuál es la diferencia entre Inbound y Outbound Marketing?
 
@@ -61,18 +61,18 @@ Hay 3 factores fundamentales para explicar este cambio:
 
 **El Inbound Marketing y el Outbound Marketing NO son contrapuestos**. Juntos forman parte de una estrategia más completa para cualquier marca o compañía. Es muy importante poder familiarizarse con los elementos de estas estrategias para poder usarlas correctamente en tus campañas con tu publico objetivo.
 
-  
+\
 
 
-![](../.gitbook/assets/image%20%2818%29.png)
+![](<../.gitbook/assets/image (18).png>)
 
-![](../.gitbook/assets/image%20%2820%29.png)
+![](<../.gitbook/assets/image (20).png>)
 
-![](../.gitbook/assets/image%20%2816%29.png)
+![](<../.gitbook/assets/image (16).png>)
 
-![](../.gitbook/assets/image%20%2810%29.png)
+![](<../.gitbook/assets/image (10).png>)
 
-![](../.gitbook/assets/image%20%2825%29.png)
+![](<../.gitbook/assets/image (25).png>)
 
 ## Inbound Marketing: Estructura básica de una estrategia de marketing digital
 
@@ -89,15 +89,15 @@ La estructura de una estrategia de inbound marketing es la siguiente:
 
 Algunas plataformas que pueden usarse en **Inbound Marketing** son los sitios web, los blogs, las redes sociales, una landing page o aplicaciones mobiles.
 
-![](../.gitbook/assets/image%20%2811%29.png)
+![](<../.gitbook/assets/image (11).png>)
 
-![](../.gitbook/assets/image%20%2812%29.png)
+![](<../.gitbook/assets/image (12).png>)
 
 
 
 ## ¿Para qué? Los objetivos como norte
 
-Vamos a enfocarnos en los objetivos de una **estrategia Inbound**.  
+Vamos a enfocarnos en los objetivos de una **estrategia Inbound**.\
 Primero debes preguntarte ¿para qué?
 
 Los objetivos son:
@@ -119,15 +119,15 @@ Te dejamos algunos tips:
 
 
 
-![](../.gitbook/assets/image%20%2827%29.png)
+![](<../.gitbook/assets/image (27).png>)
 
-![](../.gitbook/assets/image%20%2817%29.png)
+![](<../.gitbook/assets/image (17).png>)
 
-![](../.gitbook/assets/image%20%2828%29.png)
+![](<../.gitbook/assets/image (28).png>)
 
-![](../.gitbook/assets/image%20%2814%29.png)
+![](<../.gitbook/assets/image (14).png>)
 
-![](../.gitbook/assets/image%20%2831%29.png)
+![](<../.gitbook/assets/image (31).png>)
 
 
 
@@ -148,13 +148,13 @@ Tips para construir buenos Buyer Personas:
 * Mantén el documento a la mano para siempre recordar a quién le estás hablando en la producción de contenidos.
 * Basa tu construcción en datos, no sólo en suposiciones. Es muy importante hacer entrevistas a usuarios reales de nuestro servicio.
 
-![](../.gitbook/assets/image%20%2815%29.png)
+![](<../.gitbook/assets/image (15).png>)
 
-![](../.gitbook/assets/image%20%2823%29.png)
+![](<../.gitbook/assets/image (23).png>)
 
-![](../.gitbook/assets/image%20%2822%29.png)
+![](<../.gitbook/assets/image (22).png>)
 
-![](../.gitbook/assets/image%20%2824%29.png)
+![](<../.gitbook/assets/image (24).png>)
 
 ## Reto: Define tu objetivo y construye tu buyer persona
 
@@ -162,7 +162,8 @@ Para este desafío debes tomarte el tiempo necesario para desarrollar tus 2 o 3 
 
 Por último, recuerda mostrarnos tu solución en la sección de los comentarios.
 
-[https://www.hubspot.com/make-my-persona](https://www.hubspot.com/make-my-persona)  
+[https://www.hubspot.com/make-my-persona](https://www.hubspot.com/make-my-persona)\
+
 {% endtab %}
 
 {% tab title="Estrategias Inbound" %}
@@ -177,20 +178,22 @@ El funnel de marketing es una estrategia fundamental en el marketing de contenid
 * **Conversión:** Necesitas que la venta se concrete, ya sea con ofertas especiales u otro tipo de estimulo comercial.
 * **Fidelización:** Tus clientes actuales deben convertirse en ““embajadores de la marca””, es decir, que recomienden tu servicio con sus amigos y conocidos por haber tenido una muy buena experiencia contigo.
 
-![](../.gitbook/assets/image%20%2834%29.png)
+![](<../.gitbook/assets/image (34).png>)
 
 El marketing de contenidos usa el modelo de cascada de contenidos. Comienza con contenido original que debemos **reconvertir** a distintos tipos de formatos: videos cortos, infografias o e-books. El contenido reconvertido lo vamos a **distribuir** por canales de estrategias inbound y outbound marketing, como posts, newsletters, landing pages o la prensa. Por último, vamos a **capitalizar** este contenido: la producción y distribución de contenido debe conseguir objetivos concretos, generar leads, suscriptores, trafico, descargas o enriquecer nuestras bases de datos.
 
-Si quieres profundizar más sobre el tema de Marketing de Contenidos ingresa a: [https://platzi.com/clases/contenido/](https://platzi.com/clases/contenido/)  
+Si quieres profundizar más sobre el tema de Marketing de Contenidos ingresa a: [https://platzi.com/clases/contenido/](https://platzi.com/clases/contenido/)\
 Si quieres profundizar más sobre el tema de Creación y Optimización del Funnel de Ventas [https://platzi.com/clases/funnel/](https://platzi.com/clases/funnel/)
 
 **Lecturas recomendadas**
 
-[![](https://www.google.com/s2/favicons?domain=https://static.platzi.com/static/images/logos/platzi_favicon.png)Curso de Content Marketinghttps://platzi.com/clases/contenido/](https://platzi.com/clases/contenido/)[![](https://www.google.com/s2/favicons?domain=https://static.platzi.com/static/images/logos/platzi_favicon.png)Curso de Estrategia y Creación de Contenido Digitalhttps://platzi.com/clases/contenidos-digitales/](https://platzi.com/clases/contenidos-digitales/)[![](https://www.google.com/s2/favicons?domain=//static.platzi.com/media/favicons/platzi_favicon.png)Qué es la cascada de contenido y cómo aplicarlahttps://platzi.com/blog/cascada-de-contenido-y-como-aplicarla/](https://platzi.com/blog/cascada-de-contenido-y-como-aplicarla/)
+[![](https://www.google.com/s2/favicons?domain=https://static.platzi.com/static/images/logos/platzi\_favicon.png)Curso de Content Marketinghttps://platzi.com/clases/contenido/](https://platzi.com/clases/contenido/)[![](https://www.google.com/s2/favicons?domain=https://static.platzi.com/static/images/logos/platzi\_favicon.png)Curso de Estrategia y Creación de Contenido Digitalhttps://platzi.com/clases/contenidos-digitales/](https://platzi.com/clases/contenidos-digitales/)[![](https://www.google.com/s2/favicons?domain=//static.platzi.com/media/favicons/platzi\_favicon.png)Qué es la cascada de contenido y cómo aplicarlahttps://platzi.com/blog/cascada-de-contenido-y-como-aplicarla/](https://platzi.com/blog/cascada-de-contenido-y-como-aplicarla/)
+
+
+
+
 {% endtab %}
 {% endtabs %}
-
-
 
 
 
