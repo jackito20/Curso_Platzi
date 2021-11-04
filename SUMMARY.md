@@ -1,12 +1,8 @@
 # Table of contents
 
-## ESCUELA DE JAVASCRIPT
-
-* [Curso de Prework Buenas Prácticas y Entorno de Desarrollo](README.md)
-
 ## Arquitectura Frontend
 
-* [Curso de Desarrollo Web Online](arquitectura-frontend/curso-de-desarrollo-web-online.md)
+* [Curso de Desarrollo Web Online](README.md)
 * [Curso de jQuery a JavaScript](arquitectura-frontend/curso-de-jquery-a-javascript.md)
 
 ## Escuela de Marketing Digital <a href="escuela-marketing-digital" id="escuela-marketing-digital"></a>

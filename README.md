@@ -1,461 +1,733 @@
-# Curso de Prework Buenas Prácticas y Entorno de Desarrollo
+---
+description: >-
+  En este curso, Leonidas Esteban te da una introducción al mundo del desarrollo
+  web que te será de mucha utilidad, tanto si quieres convertirte en un
+  programador Backend, como si tu objetivo es ser un
+---
+
+# Curso de Desarrollo Web Online
 
 {% tabs %}
-{% tab title="Introducción a la línea de comandos" %}
-## Manejo archivos y directorios&#x20;
+{% tab title="Introducción al curso" %}
+## Introducción al desarrollo web
 
-Vamos a ver diferentes comandos que nos serán de gran utilidad:
+El desarrollo web tiene que ver con todo lo que percibimos a través del navegador: páginas, aplicaciones y sitios web como Facebook, Instagram y Twitter.
 
-```
-• ls: Nos permite listar los archivos y directorios que se encuentren dentro de la carpeta en la que estamos ubicados, podemos pasarle distintos parámetos a este comando:
-• -a podemos ver los archivos ocultos.
-• -l nos lista los contenidos mostrando sus permisos y propietarios.
-• -t nos lista los contenidos según su fecha.
-• clear: Nos limpia la pantalla.
-• pwd: Nos retorna la ruta absoluta en la cual nos encontramos.
-• mkdir: Crea una carpeta.
-• cd: Nos mueve a alguna carpeta que le indiquemos, dentro de los archivos ocultos vimos que existe:
-• .: Refiere a la carpeta en la cual estamos ubicados.
-• ..: Se refiere a la carpeta padre en la cual nos encontramos.
-• history: Muestra el histórico de todos los comandos que hemos ejecutado.
-• touch: Crea un archivo vacío con el nombre que le indiquemos.
-• nano: Es un editor dentro de la consola, podemos abrir cualquier archivo y modificarlo.
-• mv: Permite mover archivos entre distintas carpetas, solamente debemos indicarle el nombre del archivo y la ruta de destino.
-• rm: Elimina únicamente un archivo, añadiendo el parámetro -rf podemos eliminar directorios también.
-```
+Para comprender cómo funciona internet necesitamos conocer tres grandes conceptos:
 
-## Herramientas básicas (Comandos CAT, MORE, TAIL y OPEN)
+* **Clients** (clientes): son los dispositivos a través de los cuales accedemos a los sitios web: un computador desktop, un teléfono, una laptop, etc.
+* **Internet**: es toda la red formada por servidores y clientes que proveen y consumen contenidos web y se comunican entre sí a nivel global.
+* **Server** (servidor): es un computador, ubicado en alguna parte de la red, que está prendido todo el tiempo, en el que se alojan o almacenan sitios web y sus recursos y al cual se accede a través de nombres de dominio (.com, .net, .pe, etc.). También se les conoce como hosting.
 
-```
-• cat: permite visualizar un archivo completo en la terminal. Tambien permite hacer copias de archivos 
-       $ cat [nombre_archivo_original] > [nombre_nuevo_archivo] 
-• more: muestra por partes un archivo dentro de la terminal. 
-• tail: muestra las últimas 10 líneas de cada archivo, se puede modificar pasándole el parámetro con el número de líneas -15. 
-• open: abre un archivo con el programa que tengamos por defecto.
-```
+Profesiones dentro del Desarrollo Web:
 
-## Crea llaves SSH
+* **Frontend**: son los encargados de cuidar toda la apariencia y experiencia de usuario. Su misión es pasar todo el diseño gráfico de un sitio o aplicación web, a código, y proveer toda la interactividad a los clientes. Esta rama se puede subdividir en algunas especializaciones como: Arquitecto Frontend, Desarrollador JavaScript (frontend), etc.
+* **Backend**: resguardan los datos y la seguridad de las aplicaciones y sitios web. Su misión es crear y mantener toda la parte del sitio web que sucede en los servidores. Pueden especializarse aún más en: SysAdmis, DevOps, Desarrollador JavaScript (backend), entre otros.
 
-Las llaves SSH nos van a ayudar para autentificarnos con servidores. SSH utiliza criptografía asimétrica, o sea, tenemos dos llaves:
+Las tres tecnologías básicas que debe conocer y manejar un **Frontend** son:
 
-* Pública: la llave pública la podemos compartir por internet.&#x20;
-* Privada: debes tenerla en un sitio seguro y no debe ser compartida.
+* **HTML**: es el lenguaje de marcado para hacer websites.
+* **CSS**: hojas de estilos cascada, el diseño hecho código.
+* **JavaScript**: es el único lenguaje que funciona actualmente dentro de los navegadores de manera nativa."
 
-Tener una llave SSH nos permitirá una conexión fácil y segura con servidores, en el caso de la escuela de JavaScript nos va a servir para conectarnos con GitHub.&#x20;
+[https://github.com/elyager-forks/desarrollo-web-portafolio](https://github.com/elyager-forks/desarrollo-web-portafolio)
 
-Para crear una llave SSH utilizamos el siguiente comando:&#x20;
+## Plan de estudios para ser un gran desarrollador web
 
-`ssh-keygen -t rsa -b 4096 -C llave, puede ser tu correo>`
+En [Platzi.com](http://platzi.com) tienes todos los cursos necesarios para convertirte en un gran **desarrollador web**:
 
-``![](<.gitbook/assets/image (39).png>)``
+* [Desarrollo Web](https://platzi.com/cursos/html5-css3/)
+* [Git y Github](https://platzi.com/cursos/git-github/)
+* [Responsive Design](https://platzi.com/cursos/responsive-design/)
+* [CSS Grid Layout](https://platzi.com/cursos/css-grid-layout/)
+* [Animaciones](https://platzi.com/cursos/animaciones-web/)
+* [Post CSS](https://platzi.com/cursos/postcss/)
+* [De jQuery a JavaScript](https://platzi.com/cursos/jquery-js/)
+* [Fundamentos de JavaScript](https://platzi.com/cursos/fundamentos-javascript/)
+* [Webpack](https://platzi.com/cursos/webpack/)
+* [ReactJS](https://platzi.com/cursos/react/)
+* [Redux](https://platzi.com/cursos/redux/)
+* [React Router](https://platzi.com/cursos/react-router/)
+
+## Software para trabajar en desarrollo web e introducción al proyecto
+
+La herramienta fundamental para el desarrollo web es el Editor de Código. Existen varias opciones entre las que destacan: SublimeText, Atom y VisualStudio Code.
+
+Los editores de código se pueden configurar y personalizar para ofrecer una mejor experiencia al desarrollador.
 {% endtab %}
 
-{% tab title="Configuración entorno de desarrollo" %}
-## **Instalación y configuración de VSCode**
+{% tab title="HTML" %}
+## DOM
 
-Si la primera mejor amiga del programador es la línea de comandos, es momento de instalar y configurar el segundo mejor amigo del programador: el **editor de código**.
+DOM es el acrónimo de Document Object Model o Modelo de documento, y es la manera en que se **representa** el contenido del documento, de manera similar a un árbol de nodos.
 
-Existen multiples editores de código, para la escuela de JavaScript vamos a utilizar [Visual Studio Code](https://code.visualstudio.com). Vamos a añadir diferentes plugins para VSCode:
+A continuación, un ejemplo sencillo de la estructura del DOM:
 
-* **Git Blame**: va a mostrar el autor de la línea de código en la que estemos trabajando.
-* **ESLint**: es una herramienta de análisis de código estático para identificar patrones problemáticos encontrados en el código JavaScript, o sea, nuestro linter. Debemos instalar y configurar eslint para que siga el estilo de código que le indiquemos.
-* **Color Highlight**: resalta el color que estemos escribiendo.
-* **SASS**: es un preprocesador de CSS.
+* html
+  * head
+    * title
+    * meta
+  * body
+    * header
+      * nav
+    * section
+      * article
+    * footer
 
-&#x20;
+## Etiquetas
 
-En el proyeto debemos activar slint y seleccionar la 3era opcion
-
-```
-npx eslint --init
-```
-
-![](<.gitbook/assets/image (38).png>)
-
-## **Google Chrome para desarrollo frontend**
-
-Instalar Reacj para el navegador
-
-[https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
-
-[https://addons.mozilla.org/en-US/firefox/addon/react-devtools/](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/)
-
-&#x20;
-
-Instalar Redux para el navegador
-
-[https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
-
-[https://addons.mozilla.org/en-US/firefox/addon/reduxdevtools/](https://addons.mozilla.org/en-US/firefox/addon/reduxdevtools/)
-
-&#x20;
-
-## **Cómo instalar NodeJS**
-
-&#x20;
-
-Node es el entorno de ejecución que tenemos para JavaScript en el lado del servidor, está basado en el motor V8 de Google Chrome. Fue creado por Ryan Dahl en el 2009, es Open Source y multiplataforma. En esta clase vamos a aprender cómo instalarlo, cómo usarlo y cómo instalar paquetes usando npm.
-
-**Revisión de Node en nuestro sistema**
-
-En la mayoría de sistemas basados en Unix ya viene instalado por defecto Node, para asegurarnos de que esté instalado debemos irnos a nuestra terminal de comandos y ejecutar:
+Las etiquetas son la representación básica de la información en un documento html. Sirven para crear y organizar el contenido.\
+La sintaxis general de una etiqueta es:
 
 ```
-node -v
+<nombre>contenido</nombre>
 ```
 
-Esto nos debería mostrar la versión de node que tenemos instalados en el sistema, por ejemplo:
+Hay ciertas etiquetas que tienen una sintaxis diferente, ya que se cierran en sí mismas; es decir, no tienen etiqueta de cierre:
 
 ```
-node -v v12.4.0
+<nombre />
 ```
 
-Si la respuesta que obtenemos es:
+Algunas de las etiquetas más conocidas y usadas son:
 
+**Etiquetas de cabecera (head):**
+
+* **`doctype`**: indica al navegador el tipo de documento que se está mostrando.
+* **`html`**: es la etiqueta que envuelve todo el documento
+* **`head`**: es la cabecera del documento y contiene sub etiquetas que describen al documento o incluyen recursos adicionales.
+
+**Etiquetas del cuerpo del documento (body):**
+
+* **`article`**: diferencia partes del contenido que pueden vivir por sí mismas.
+* **`nav`**: para hacer menús de navegación.
+* **`aside`**: contenido menos relevante, como publicidad, etc.
+* **`section`**: sirve para diferenciar las secciones principales del contenido.
+* **`header`**: cabecera del documento.
+* **`footer`**: pie de página del documento.
+* **`h1 - h6`**: títulos de nuestro sitio web.
+* **`table`**: tablas de contenidos, similar a la estructura de las hojas de calculo.
+* **`ul y ol`**: listas de items.
+* **`div`**: cualquier división para organizar el contenido.
+
+&#x20;[HTML5 Doctor, helping you implement HTML5 today](http://html5doctor.com)
+
+## Estructura de nuestro Sitio Web
+
+El proyecto que desarrollaremos en este curso se trata de un Portafolio Personal, incluirá una cabecera, navegación, un hero (área visual con información destacada), un área de proyectos y otra para eventos, y finalmente un pié de página con un formulario de contacto y enlaces a redes sociales.
+
+El archivo **index.html** es el archivo que el navegador abre por defecto al acceder a un directorio en un servidor web.
+
+La estructura básica de un archivo html es la siguiente:
+
+```markup
+
+<html>
+  <head>
+    <title> Título de la página title>
+  head>
+  <body>
+    <header> Cabecera del contenido header>
+    <section> Sección principal section>
+    <section> Otra sección section>
+    <footer> Pié de página del documento footer>
+  body>
+html>
 ```
- node -v command not found: node
+
+```markup
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Leonidas Esteban</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <figure>
+          <img> logo
+        </figure>
+        <nav>
+          <ol>
+            <li>
+              <a>Portafolio</a>
+            </li>
+            <li>
+              <a>Experiencia</a>
+            </li>
+            <li>
+              <a>Trabajemos juntos</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </header>
+    <section>sección principal</section>
+    <section>sección portafolio</section>
+    <section>sección eventos</section>
+    <section>sección contacto</section>
+    <footer>footer</footer>
+  </body>
+</html>
 ```
 
-Debemos instalarlo
+## Continuando con la estructura de nuestro Sitio Web
 
-### **Instalación de Node en MacOS**
+La estructura html de nuestro proyecto usa una o más de las siguientes etiquetas:
 
-Para esta instalación vamos a requerir de homebrew. Este es un gestor de paquetes excelente para Mac y que vamos a usar en varias clases de este curso, si no lo tienes instalado lo mejor es que lo hagas. En este link [https://brew.sh/index\_es](https://brew.sh/index\_es) encontrarás los pasos necesarios para instalarlo.
+* **h1** a **h6**: son etiquetas para indicar títulos con un estilo que destaca del resto.
+* **article**: es la parte de nuestro contenido que puede vivir por sí mismo. Pueden haber tantos artícle como proyectos o eventos tenga nuestro portafolio.
+* **p**: define el texto de un párrafo.
+* **small**: aplica una apariencia de texto reducido en tamaño.
+* **strong**: aplica al texto un formato de negritas.
+* **a**: corresponde a un ancla o enlace a una url interna o externa del documento.
+* **img**: con esta etiqueta podemos enlazar imágenes en el documento.
+* **figure**: le da un contexto semántico a las imágenes.
 
-Una vez tengamos instalado homebrew solo debemos ejecutar en la terminal
-
+```markup
+<section>
+      <h1>
+        Hola! Soy <strong>Leonidas Esteban</strong> Desarrollador <br/> <strong>Javascript</strong> con <br> pasión por la <strong>enseñanza</strong>
+      </h1>
+      <img> 
+    </section>
+    <section>
+      <h2>Portafolio (Proyectos Destacados)</h2>
+      <article>
+        <h3>Platzi Video</h3>
+        <h6>React Native / React</h6>
+        <p><small><strong>Fecha:</strong> 01/07/2018</small></p>
+        <p><small><strong>Pueds verlo en::</strong> www.platzi.com/native</small></p>
+        <p>Platzi Video fue el resultado de 3 meses de trabajo
+            para crear la mejor app para enseñar el funcionamiento
+            de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de nevegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma</p>
+      <img>
+      </article>
+    </section>
+    <section>
+      <h2>Más sobre mi experiencia</h2>
+      <article>
+        <figure>
+          <img/>
+        </figure>
+        <h3>PlatziConf México 2018</h3>
+        <p>El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida de constante aprendizaje.</p>
+        <a>Ver Plática</a>
+      </article>
+    </section>
 ```
-brew install node
+
+## Atributos HTML
+
+Los atributos son valores agregados a las etiquetas (tags) html que extienden su habilidad o funcionalidad con información específica.
+
+A continuación, un ejemplo de los atributos más comunes y usados en algunas etiquetas:
+
+Para **img**:
+
+* **src**: específica la _ruta_ de la imagen que será mostrada a través de esta etiqueta. La ruta puede ser _absoluta_ (cunado especifica una dirección exacta, incluyendo el prefijo _http(s)_ ) o _relativa_ (cuando la referencia a la ubicación de la imagen parte de la ubicación del archivo actual).
+* **alt**: indica un texto alternativo que será mostrado en lugar de la imagen cuando ésta no pueda ser mostrada.
+* **width**: ancho de la imagen en pixeles.
+* **height**: alto de la imagen en pixeles.
+
+Para **link**, en la cabecera _head_ del documento:
+
+* **rel**: indica la relación del recurso con el contenido.
+* **type**: indica el tipo de recurso / formato.
+* **href**: indica la ubicación (url) del recurso enlazado.
+
+Para **meta**, también en la cabecera _head_ del documento:
+
+* **charset**: indica la tabla de caracteres (utf-8 para caracteres latinos) usada en el documento.
+
+Para **a**:
+
+* **href**: la ubicación o ruta a la que enlaza esta etiqueta de ancla. En el caso de querer enlazar a elementos que se encuentran dentro del mismo documento, este atributo debe indicar el valor del atributo ““id”” de ese elemento destino del enlace.
+
+```markup
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Leonidas Esteban</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <figure>
+          <img src="images/logo.png" alt="Logo de http://leonidasesteban.com" />
+        </figure>
+        <nav>
+          <ol>
+            <li>
+              <a href="#">Portafolio</a>
+            </li>
+            <li>
+              <a href="#">Experiencia</a>
+            </li>
+            <li>
+              <a href="#">Trabajemos juntos</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <h1>
+        Hola! Soy <strong>Leonidas Esteban</strong> Desarrollador <br/> <strong>Javascript</strong> con <br> pasión por la <strong>enseñanza</strong>
+      </h1>
+      <img src="images/hero.jpg" width="500" height="300" alt="imagen principal del sitio"> 
+    </section>
+    <section>
+      <h2>Portafolio (Proyectos Destacados)</h2>
+      <article>
+        <h3>Platzi Video</h3>
+        <h6>React Native / React</h6>
+        <p><small><strong>Fecha:</strong> 01/07/2018</small></p>
+        <p><small><strong>Pueds verlo en::</strong> www.platzi.com/native</small></p>
+        <p>Platzi Video fue el resultado de 3 meses de trabajo
+            para crear la mejor app para enseñar el funcionamiento
+            de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de nevegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma</p>
+      <img  width="500" src="images/platzi-video-react-native.png" alt="prouyecto del curso de React Native">
+      </article>
+    </section>
+    <section>
+      <h2>Más sobre mi experiencia</h2>
+      <article>
+        <figure>
+          <img src="images/platzi-conf.jpg" width="500" />
+        </figure>
+        <h3>PlatziConf México 2018</h3>
+        <p>El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida de constante aprendizaje.</p>
+        <a>Ver Plática</a>
+      </article>
+    </section>
+    <section>sección contacto</section>
+    <footer>footer</footer>
+  </body>
+</html>
 ```
 
-Este proceso podría tardar un rato dependiendo de la velocidad a la conexión a internet, ya que cuando se intenta instalar un paquete con homebrew este intenta actualizar todos los paquetes que se han instalado con él. Una vez esté listo puedes escribir en la terminal:
+## Formularios HTML
 
+Los Formularios en html son unidades de información que nos permiten recolectar información para enviarlos al propietario del website o a un servicio externo. Esta formado por dos partes o contextos: una parte donde se hace el ingreso y modelación de esos datos (en el frontend), y otra parte que se encarga de enviar, procesar y almacenar esos datos (en el backend).
+
+Los formularios se crean con la etiqueta **form**. El atributo principal de un formulario es _action_, ya que contiene la ruta a la que serán enviados los datos recolectados.
+
+Hay diversos elementos html que permiten la captura o recolección de datos, aunque generalmente se usan los elementos creados con la etiqueta _input_. Los inputs también sirven para crear botones, aunque existe una etiqueta especial para ésto llamada _button_… El atributo principal de los inputs es _type_, que indica el tipo de comportamiento o dato que se espera recibir.
+
+Los elementos creados con la etiqueta _label_ muestran un texto que se puede asociar con un input para darle mayor significado al campo, principalmente cuando no se usa el atributo _placeholder_.
+
+```markup
+<section id="contacto">
+  <form action="/suscripcion/">
+    <h3>¿Creamos algo juntos?</h3>
+    <input type="text" placeholder="Déjame tu email" id="email">
+    <button>Enviar</button>
+  </form>
+</section>
 ```
-node -v
+
+## Navegación entre secciones
+
+**target**\
+Especifica en donde desplegar la URL enlazada:
+
+\__self:_ Carga la URL en el mismo contexto de navegación que el actual. Este es el comportamiento por defecto.\
+\__blank:_ Carga la URL en un nuevo contexto de navegación. Usualmente es una pestaña, sin embargo, los usuarios pueden configurar los navegadores para utilizar una ventana nueva en lugar de la pestaña.\
+\__parent:_ Carga la URL en el contexto de navegación padre (parent) del actual. Si no existe el padre, este se comporta del mismo modo que \_self.\
+\__top:_ Carga la URL en el contexto más alto de navegación (el cual es un ancestro del actual, y no tiene padre (parent)). Si no hay padre (parent), este se comporta del mismo modo que \_self.
+
+```markup
+<nav>
+  <ol>
+    <li>
+      <a href="./portafolio/index.html">Portafolio</a>
+    </li>
+    <li>
+      <a href="#eventos">Experiencia</a>
+    </li>
+    <li>
+      <a href="#contacto">Trabajemos juntos</a>
+    </li>
+  </ol>
+</nav>
 ```
 
-y ya debería aparecerte la versión instalada que tienes de Node. Igualmente, con npm ejecutaremos:
-
-```
-npm -v
+```markup
+<a href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
 ```
 
-y debería salirte la versión que tienes de npm.
+## Formas de agregar estilos a HTML
 
-### **Instalación de Node en Linux**
+Hay tres opciones para incluir estilos que definan la apariencia de tu html:
 
-Dependiendo de tu distribución de Linux deberás ejecutar comandos distintos, esto porque entre distribuciones cambiar el gestor de paquetes:
+* **Estilos en línea**: se definen directamente en el elemento html que quieres estilizar, se agregan con el atributo **style**.
+* **Estilos con el tag Style**: regularmente este tag se incluye dentro de la etiqueta **head** del html.
+* **Estilos enlazados desde un archivo css externo**: utilizando la etiqueta **link** que nos permite enlazar recursos externos.
 
-En distribuciones basadas en Debian y Ubuntu debes ejecutar:
+A **CSS**, se le llama **hojas de estilos en cascada** porque los estilos que se definen para una página, se van aplicando de arriba hacia abajo, y de lo más general a lo más particular, teniendo prioridad lo más particular. Esto es, los estilos que prevalecen son los que han sido definidos **en línea**, luego los que fueron definidos mediante la etiqueta **style** en la cabeza o cuerpo del html, y por último los estilos definidos en archivos externos enlazados con la etiqueta **link**. Esta prioridad se puede alterar al usar el modificador \*\*!important"" en la definición de algún estilo en particular, aunque esto no es recomendado.
 
-$ sudo apt update
+## Reglas, selectores, declaraciones, propiedades y valores de CSS
 
-$ sudo apt install nodejs
+**- ¿Cuál de las 3 formas de insertar estilos HTML es la que se debería utilizar y por qué?**\
+Archivos externos. Porque nos permite tener separado el código HTML del código CSS.
 
-$ sudo apt install npm
+**- ¿Cuáles son las partes de un bloque de código en CSS?**\
+Reglas\
+Selectores\
+Declaraciones\
+Propiedades\
+Valores
 
-En distribuciones basadas en Arch:
+**- ¿Qué es una regla?**\
+Es el conjunto de todas las partes del bloque de código (selectores, declaraciones, propiedades y valores)
 
-$ pacman -S nodejs npm
+**- ¿Qué es un selector?**\
+Es la forma que usamos en CSS para apuntar hacia uno o varios elementos de HTML. Existen varios tipos de selectores.
 
-### **Instalación de Node en Windows:**
+**- ¿Cuáles son los tipos de selectores más importantes y qué significan?**\
+De etiqueta = Se usa para apuntar a un tipo de etiqueta de html. No se recomienda usar cuando queremos afectar a una etiqueta y tenemos muchas en nuestro código HTML\
+Descendentes = Se usa para apuntar a un elemento desde el padre hasta el hijo. Este último será al que vayamos a afectar.\
+De id = Se usa cuando queremos afectar únicamente a una etiqueta en concreto, no importa cual sea, desde que se únicamente a ella.\
+De clase = Se usa para afectar a varias etiquetas, las cuales deben tener como atributo class que sirve como apuntador hacia esas etiquetas
 
-Esta es la instalación más sencilla y es una instalación clásica en Windows, únicamente descargamos un programa y le damos continuar, o si prefieres configuras la instalación según las opciones que están disponibles. El programa se descarga desde acá [https://nodejs.org/en/#download](https://nodejs.org/en/#download) y seleccionas la versión que desees (recomendada la versión igual o superior a las 12)
+**Ejemplos**
 
-## **Cómo ejecutar Node**
+\++Etiqueta ++
 
-Una vez se tenga instalado Node en el sistema podemos hacer uso de él, en esta clase haremos un uso básico de sus comandos, a lo largo de la Escuela de JavaScript será utilizado. Lo primero que haremos será ejecutarlo y escribir un Hola mundo. En la terminal haremos lo siguiente:
+```css
+/*si ponemos el siguiente código*/
+a {
+  color: blue;
+}
+/*Nos aplicará un color azul a todas las etiquetas de ancla en el documento HTML*/
+```
 
-$ node
+Descendentes
 
-\> console.log('Hola mundo')
+```css
+body header div nav ol li a{
+	color: green;
+}
+/*nos aplicará el estilo únicamente a las etiquetas de ancla (<a>) que estén dentro de <li>*/
+```
 
-Hola mundo
+id
 
-\>&#x20;
+```css
+/*supongamos que tenemos una etiqueta de párrafo con la id "parrafo1"...*/
 
-Al escribir node se nos abrirá un shell interactivo donde podremos escribir código en JavaScript. Esta herramienta es esencial en el desarrollo porque es aquí donde podremos probar funcionalidades antes de insertarlas en nuestro proyecto.
+#parrafo1{
+	color: blue;
+}
 
-## **Cómo utilizar npm**
+/*Nos aplicará el estilo únicamente a ese párrafo con id "parrafo1", PD las id son únicas no puedes poner una misma id en dos etiquetas distintas*/
+```
 
-npm es el manejador de paquetes de Node con él podemos instalar dependencias a nuestro proyecto o instalar programas globalmente en nuestro sistema. A lo largo de este curso y de toda la Escuela de JavaScript npm será quien nos permita correr los proyectos e instalar nuestras dependencias.
+Class
 
-&#x20;
+```css
+.importante {
+	color: pink;
+}
+```
 
-## **Herramientas de desarrollo Backend: JSON Viewer y Postman**
+**- ¿Qué es una declaración?**\
+Es todo el conjunto de propiedades y valores que se encuentran dentro de las llaves del bloque de código de CSS
+
+**- ¿Qué es una propiedad?**\
+Son todas las diferentes formas que podemos usar para estilizar los elementos. Su funcionamiento está ligado a los valores
+
+**- ¿Qué son los valores?**\
+Son los valores que una propiedad puede tener.
+
+![](<../.gitbook/assets/image (7).png>)
+
+## Los estilos incluidos por el navegador
+
+Los navegadores incluyen estilos predeterminados para cada elemento html. Esto significa que aún cuando no hayas definido o asignado ningún estilo a tus etiquetas, éstas tendrán una apariencia particular que es muy similar en todos los navegadores, aunque no necesariamente idéntica.
 
 
+
+## Agregando clases a los componentes escritos en HTML
+
+Para aplicar estilos a los componentes html, lo más común y recomendable es hacerlo a través de **clases** que se asignan al elemento html mediante el atributo **class**.
+
+Un elemento html puede tener varias clases, se deben indicar en el mismo atributo class pero separadas por un espacio en blanco.
+
+Al escoger los nombres de clases, debemos tener en cuenta que se puedieran aplicar a muchos elementos, o a elementos particulares, así que la claridad y precisión en su identificación facilitará la contextualización y mantenibilidad en el futuro.
+
+Algunos de los estándares más usados para la identificación de clases son:
+
+* [OOCSS](https://www.keycdn.com/blog/oocss/)
+* [BEM](http://getbem.com/naming/)
+* [Component CSS](https://www.sitepoint.com/introducing-ccss-component-css/)
 {% endtab %}
 
-{% tab title="Git y GitHub" %}
-## **¿Qué es Git, para qué se usa y qué resuelve?**
+{% tab title="Estilos y CSS" %}
+## Unidades de medida y colores
 
-Git es un sistema de control de versiones que nos permite llevar un histórico sobre los cambios de nuestro proyecto, no es el único sistema de control de versiones, pero sí el más usado. Fue creado por Linus Torvalds. **Git y GitHub no son lo mismo**, uno es el sistema de control de versiones y el otro es la red social de programadores.
+Hay varias unidades de medida con las que se puede trabajar en CSS: %, em, rem, px, pt, fr, vw, vh\
+Las medidas más comunes y utilizadas son los pixeles. Un **píxel** es la menor unidad homogénea en color que forma parte de una imagen digital. Es la unidad más práctica y fácil de utilizar y manipular, y es la que utilizaremos mayormente en este curso.
 
-Los repositorios son una estructura de datos que almacenan información sobre archivos y directorios. Es el inicio de todo proyecto con Git, dentro de un repositorio encontraremos **ramas**, no son más que la duplicación de un objeto bajo un repositorio, permite trabajar en paralelo para al final unir los cambios.
+Los colores en CSS pueden ser representados de al menos tres formas diferentes:
 
-![](<.gitbook/assets/image (41).png>)
+* Representados con **palabras claves** para cada color, como: red, green, blue, pink, yellow, black, etc.
+* Usando la composición de tres colores (**rojo**, **verde** y **azul**): para esto podemos usar notación hexadecimal o las funciones rgb() y rgba().
+* Usando la composición mediante valores de **Matiz**, **Saturación** y **Luminosidad** con: hls() y hlsa().
 
-## **Instalación de Git**
+Con respecto a los valores hexadecimales, cada color está representado por 6 digitos, que representan 3 pares de hexadecimales: FF - FF - FF (rojo, verde y azul), en el que cada par puede tomar valores hexadecimales entre 00 y FF. Cada uno equivale a valores decimales entre 0 y 255, donde 0 es la ausencia de ese color y 255 la mayor cantidad disponible. De esta manera cada color se forma por la combinación de diferentes proporciones de rojo, verde y azul.
 
-Git es un programa que nos permite llevar control de versiones de un proyecto, en esta clase vamos a aprender cómo instalarlo y configurar ciertos parámetros básicos, a lo largo de este curso haremos un configuración más avanzada de Git.
+* \#000000 es equivalente a Negro
+* \#FF0000 es equivalente a Rojo
+* \#00FF00 es equivalente a Verde
+* \#0000FF es equivalente a Azul
+* \#FFFFFF es equivalente a Blanco
 
-Antes de que instalemos Git es necesario que revisemos si ya está instalado en nuestro sistema, por lo general en los sistemas operativos basados en Unix está instalado (MacOS o Linux); para verificar escribimos en la terminal de comandos:
+&#x20;[\<color> - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/color\_value)
 
-$ git --version
+## Inspector de elementos
 
-git version 2.17.2
+Para ver y depurar el código de una página html, el navegador incluye una herramienta llamada **Inspector de elementos**, o simplemente **inspector**, que abre, en una sección de la ventana, una serie de espacios con información técnica muy detallada sobre todo lo que sucede en el DOM, incluídos los estilos que tienen aplicados cada uno de los elementos del html.
 
-Si el comando aparece y retorna una versión quiere decir que fue está instalado dentro del sistema y no necesita hacerse una instalación.
+La mayoría de los navegadores incluye algún tipo de **Inspector**, en el curso usamos Google Chrome, pero la misma herramienta (o similar) la encuentras en Firefox, Opera, Edge, etc.
 
-### **Instalar Git en MacOs**
+Utilizando el Inspector podemos hacer modificaciones (temporales) manualmente en el html de cualquier sitio web, consultar sus estilos y recursos enlazados, hacer pruebas en tiempo real con JavaScript, monitorear variables o eventos entre muchas otras tareas útiles para cualquier desarrollador.
 
-Podemos hacer uso de homebrew para la instalación o de un instalador que encuentras en este link [https://sourceforge.net/projects/git-osx-installer/files/](https://sourceforge.net/projects/git-osx-installer/files/). Si decides instalarlo por homebrew debes ejecutar en la terminal de comando:
+## Tipos de textos personalizados
 
-$ brew install git
+Los tipos de texto, también conocidos como **tipos de letras** o **fuentes**, son el conjunto de diseños tipográficos que representan a cada una de las letras y los caracteres gráficos en el documento. Su nombre correcto es **tipografía**. Los diferentes tipos de fuente están basados en archivos que existen en cada sistema operativo.
 
-### **Instalar Git en Linux**
+Algunos ejemplos de **tipos de texto** o fuentes, son:
 
-Dependiendo de la distribución de Linux que tenga el proceso de instalación cambia, esto debido a que cada distribución utiliza un programa distinto para manejar los paquetes.
+* Arial
+* Times New Roman
+* Verdana
+* DeJaVu
+* Lato
+* OpenSans
+* Roboto
 
-Para distribuciones basadas en Debian y Ubuntu:
+CSS permite utilizar **fuentes** diferentes a las disponibles en el sistema operativo del cliente mediante la importación o el enlace a archivos de fuentes externas. Las más usadas son las que están disponibles a través del sitio web de **Google Fonts**.
+
+Al definir el tipo de texto asociado a una clase css con la propiedad **font-family** indicamos al navegador que debe intentar usar esa fuente en particular para darle la apariencia tipográfica a los textos de ese elemento html.
+
+[https://fonts.google.com/](https://fonts.google.com)
+
+```markup
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
+```
+
+```css
+body{
+    font-family: 'Source Sans Pro',sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+}
+
+```
+
+## Propiedades para los textos
+
+Además de todas las propiedades comunes que comparten los elementos estándar de html, como: display, position, margin, padding, top, left, right, bottom, border, etc., los elementos que admiten contenidos textuales aceptan una serie particular de propiedades entre las que se encuentran las siguientes:
+
+* **font-family**: define el tipo de fuente aplicado al texto.
+* **color**: define el colore del texto.
+* **line-height**: define la altura desde la base del texto hasta la base de la siguiente línea de texto.
+* **font-size**: define el tamaño del texto, admite cualquiera de las unidades de medida disponibles.
+* **letter-spacing**: define el espaciado entre las letras del texto.
+* **font-weight**: define el ““peso”” de la letra, negrita, normal, light y normalmente se indica en múltiplos de 100 o usando keywords.
+* **text-decoration**: define el decorado del texto como subrayado, tachado, con subrayado superior, etc.
+* **text-transform**: permite transformar el estado de mayúsculas / minúsculas en el texto, usando uppercase para mayúsculas sostenidas, lowercase para minúsculas sostenidas, etc.
+
+```css
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h1, h2 ,h3, h4, h5, h6 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+   /* font-style: italic; */
+}
 
-$ sudo apt-get update $ sudo apt-get install git
+h1{
+    font-size: 40px;
+    line-height: 1.5em;
+    letter-spacing: -.2px;
+ /*   text-transform: uppercase;
+    text-decoration: underline; */
+}
+```
 
-### **Instalar Git en Windows**
+## Dimensiones fijas para elementos
 
-Es como instalar una aplicación más en Windows, el instalador lo consigues acá [https://gitforwindows.org](https://gitforwindows.org), debes descargarlo y abrirlo. Allí se te abrirá una ventana de instalación y solo debes seguir los pasos que te diga.
+Todos los elementos html comparten algunas propiedades de estilo, entre éstas se encuentran las propiedades relacionadas con sus dimensiones: **width** (ancho) y **height** (alto).
 
-Git nos instala una terminal que se llama git shell esto es una terminal distinta a la que trae el sistema operativo, es muy similar a la que podríamos tener en Unix, incluso puede ser un reemplazo de Hyper o de la terminal de Ubuntu.
+Al manipular las propiedades de dimensiones hay que tener en cuenta que si los contenidos de los elementos que estamos estilizando, son más grandes que las dimensiones que hemos indicado, se pudieran generar resultados inesperados en la apariencia, como solapamiento o desbordamiento.
 
-### **Configurar Git**
+## Backgrounds de color e imagen
 
-Para comprobar que la instalación fue exitosa debemos repetir el comando que escribimos al inicio:
+Algunas de las propiedades de css relacionadas con la apariencia del fondo de los elementos son:
 
-$ git --version
+* **background**: con la que se puede indicar un color, o usada de manera extendida, puede incluir color de fondo, url de la imagen, posición y modo de repetición de la imagen.
+* **background-image**: contiene la url que se usará como fondo del elemento.
+* **background-color**: indica el color de fondo, se puede usar en combinación con la imagen.
+* **background-size**: se puede indicar en valores de alto y ancho o en alguna de las palabras claves permitidas: cover o contain.
+* **background-position**: indica la posición de la imagen dentro del elemento, puede indicarse en unidades o en palabras claves como center, left, top y right.
+* **background-repeat**: indica el método de repetición de la imagen de fondo, puede ser: repeat, repeat-x, repeat-y o no-repeat.
 
-git version 2.17.2
+```
 
-Aquí ya debería mostrar una versión instalada. No es necesario que sea la misma versión que vemos en esta clase, si instala una superior no pasa nada.
+h1{
+    font-size: 40px;
+    line-height: 1.5em;
+    letter-spacing: -.2px;
+    color: #fff;
+}
 
-La configuración que haremos es poner dentro de git nuestro nombre y correo electrónico, para que de esta manera todo lo que hagamos esté de cierta forma “firmado” con nuestros datos. Debemos irnos a la terminal de comandos y ejecutar:
+h1 strong{
+    color: #026fff;
+}
 
-$ git config --global user.name "Pachito Lopez"
+.hero{
+    height: 300px;
+    background-image: url('../images/hero.jpg');
+    background-color: #1b2127;
+    background-size: 500px, 400px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+.header{
+    background-color: #1b2127;
+    color: #fff;
+}
+  
+.header a{
+    color: #fff;
+    text-decoration: none;
+}
+```
 
-$ git config --global user.email "pachito@lopez.co"
+## Bordes
 
-Allí deberás completar tu información personal, esta que acabamos de poner es solo de ejemplo, no es real.
+Todos los elementos html admiten la propiedad de css **border**, que define la apariencia que tendrá el contorno del componente.\
+El borde puede ser de muchos estilos, y al igual que las propiedades margin y padding que aprenderás más adelante, a los bordes se les puede colocar estilos tanto de forma general con la propiedad **border**, como de acuerdo al lado del elemento que se indique: border-top, border-right, border-bottom y border-left.
 
-Si quieres profundizar en este tema te recomiendo que vayas al [Curso Profesional de Git y Github](https://platzi.com/clases/git-github/) que tenemos en Platzi.
+Con la propiedad **border-radius** se define el redondeado de las esquinas de los bordes.
 
-## **Cómo crear un repositorio, primer commit, reset y logs**
+```css
+.project{
+    /*  border-top: 10px solid red;
+      border-right: 10px solid green;
+      border-left: 10px solid blue;
+      border-bottom: 10px solid yellow;*/
+      /*border-color: #027fff ; */
+      /*border-top-color: red;
+      border-top-width: 15px;
+      border-top-style: solid; */
+      border: 1px solid gray;
+      border-radius: 10px;  
+}
+```
 
-Aprende el flujo básico de Git: crear un repositorio, crear un commit y ver un histórico de los commits.
+## Márgenes
 
-Para comenzar con un nuevo repositorio en Git debemos correr el siguiente comando:
+Los márgenes en CSS son el espacio que separa a los elementos html entre sí. Hay elementos de html que traen márgenes predefinidos (por defecto) en los estilos propios del navegador como el caso de: body, h1, h2, h3, h4, h5, h6, ol, ul, li, p, y muchos otros.
 
-git init
+Cuando hay dos márgenes de elementos diferentes que colindan entre sí, se presenta una situación llamada ““margin collapsing”” en la que el mayor margen de los dos se superpone al otro.
 
-Al correr el comando nuestra terminal nos va a mostrar que nos encontramos dentro de la rama master, la rama principal de todo proyecto en Git. Además, si ejecutamos ls -la veremos que hay una carpeta oculta llamada “.git”.
+Se puede asignar una medida de margin para los cuatro lados del elemento, o márgenes individuales para cada uno de los lados con: margin-top, margin-right, margin-bottom y margin-left.
 
-Todo cambio tiene varios estados dentro de Git:
+Se puede centrar un elemento html colocándole el valor de **margin: 0 auto**, cuando dicho elemento tiene display _block_.
 
-* Sin seguimiento
-* Sin cambios
-* Con cambios
-* En stagging
+## Modelo de caja
 
-Para ver el estado del repositorio ejecutamos el comando git status. Podemos añadir un archivo con el comando git add \<nombre del archivo>, una vez lo tenemos añadido podemos dar commit con el comando git commit -m \<mensaje del commit>. Con git log podemos visualizar un histórico de los commits.
+El modelo de caja es un concepto teórico de css que representa a cada elemento html en base sus propiedades de: **margin**, **border**, **padding** y **dimensiones** (alto y ancho).\
+Para visualizar un elemento html en su representación como modelo de caja debemos irnos a la parte baja de la sección _styles_ del inspector de elementos, o en la sección llamada **Computed**.
 
-Dentro de Git es posible regresar entre commits con el comando git reset, tenemos dos opciones para regresar:
+En el modelo de caja, el **ancho total** de un _elemento html_ equivale a la sumatoria de los valores de: **width**, **padding-left**, **padding-right**, **border-left-width**, **border-right-width**. De manera similar aplica para el **alto total** de cada _elemento_. Aunque **margin-left** y **margin-right**, forman parte del modelo de caja, no se incluyen para el calculo del ancho total.
 
-* \--soft: vamos a movernos al commit que le indiquemos, sin eliminar los commits de por medio.
-* \--hard: nos movemos al commit que indiquemos y regresamos el repositorio al estado del commit, borrando todos los commits de por medio.
+Con la propiedad **box-sizing**, y en particular con el valor **border-box** de esta propiedad, podemos modificar el comportamiento del modelo de caja para que nuestro elemento nunca supere el tamaño máximo que le hayamos definido en **width** y **height**. Esta es la opción recomendada para trabajar.
 
-## **Ramas, rebase y merge**
+## Tipos de display
 
-Recuerda que una rama es la duplicación de un objeto sobre el repositorio y nos va a permitir trabajar en paralelo para después unir los cambios a nuestro proyecto, en este caso a nuestra rama master, los comandos principales son:
+Display es la propiedad de css que indica cómo debe ser mostrado un elemento html. Todos los elementos tienen algún tipo de display. Si un elemento no se ve en pantalla es porque seguramente su display es none.
 
-* git checkout -b develop: según el commit en el cual ejecutemos este comando va a ser el punto en el cual se va a crear una rama idéntica, en este caso con el nombre de “develop”.
-* git merge develop: va a añadir los commits a la rama master.
-* git rebase develop: va a añadir los commits a la rama master unificando ambas ramas y conservando la historia de la misma.
+Los valores más comunes que puede recibir la propiedad **display** son:
 
-![](<.gitbook/assets/image (40).png>)
+* **block**: el elemento intenta abarcar todo el ancho posible.
+* **inline**: reduce su tamaño exclusivamente hasta lo que abarca su contenido, descartando las propiedades width y height.
+* **inline-block**: combina lo mejor de block e inline, ya que respeta las dimensiones indicadas en las propiedades width y height, pero coloca el elemento en línea (al costado) de elementos hermanos que también tengan display: inline o inline-block.
+* **flex**: asume algunas propiedades por defecto que favorecen la alineación de los elementos internos.
+* **grid**: similar a flex, asume algunas propiedades por defecto organizando los contenidos en filas y columnas.
+* **none**: oculta el elemento.
 
-## &#x20;**Github: configuración, repositorio remoto, push y pull**
+![](<../.gitbook/assets/image (9).png>)
 
-GitHub es la red social de programadores, como todo buen programador necesitas desplegar tus proyectos desde la terminal, para ello debes añadir una llave SSH a tu cuenta de GitHub. Dentro de GitHub crear un repositorio es bastante rápido y sencillo, puedes elegir si va a ser un repositorio público o privado y el tipo de licencia que va a tener tu proyecto, si es un proyecto open source lo mejor es añadir una licencia MIT.
+## Propiedades de flexbox
 
-## **Cómo crear un buen README.md y sintaxis de markdown**
+Flexbox se refiere al tipo de display en css que permite un manejo _flexible_ de la alineación, dimensionamiento y distribución de elementos html.
 
-&#x20;
+Esta propiedad se aplica a un elemento padre, pero va a afectar principalmente a sus elementos hijos directos. Por defecto, los elementos internos quedan alineados unos seguidos de los otros. El comportamiento del modelo de caja de estos elementos hijos también se ha modificado, ya que pierden el efecto de su propiedad margin.
 
-El README es el archivo en el cual hacemos la descripción del proyecto, ya sea open source o privados es importante tener un buen README. Este archivo se escribe con formato markdown, esto es lo primero que veremos en esta clase.
+Los elementos hijos de un padre con propiedad **display: flex** tienen a su disposición algunas nuevas propiedades que aportan mayor flexibilidad a su comportamiento. Una de estas propiedades es **flex-shrink** que, junto a la propiedad **flex-wrap** del padre, permite adaptar y distribuir los elementos de manera dinámica en el espacio horizontal disponible hasta ocupar todo el espacio, y luego pasar a ocupar dinámicamente las siguiente filas hacia abajo.
 
-### **Markdown**
+```css
+.padre{
+	display: flex;
+	flex-wrap: wrap;
+}
+.hijo{
+	flex-shrink: 0;
+}
+```
 
-Es un formato de escritura que permite la generación de contenido fácil y rápido, permite generar una salida (por lo general) en formato HTML sin necesidad de aprender a profundidad HTML. Es ampliamente utilizado por su facilidad de generar texto enriquecido.
+![](<../.gitbook/assets/image (8).png>)
 
-### **Encabezados:**
 
-Lo utilizamos para resaltar una parte importante, títulos, subtítulos, etc. Se utiliza el símbolo # para demarcar el inicio de un encabezado.
 
-\# Encabezado nivel 1
+## Alineando elementos de forma horizontal
 
-\## Encabezado nivel 2
+La propiedad de css que nos permite definir la forma en que se alinearán o distribuirán los hijos de un elemento al que se le ha asignado un _display flex_ es: **justify-content**. Y puede tomar entre otros valores, los siguientes:
 
-\### Encabezado nivel 3
+* **flex-start**: para alinear todos los elementos hacia el inicio del espacio disponible.
+* **flex-end**: para alinear todos los elementos hacia el final, a la derecha.
+* **center**: para alinear todos los elementos al centro del espacio disponible.
+* **space-between**: para distribuir los elementos con un espacio proporcional e igual entre ellos.
+* **space-evenly**: para distribuir los elementos con un espacio proporcional e igual entre ellos (incluyendo el primer y último elementos con respecto a los extremos del espacio disponible).
+* **space-around**: similar a _space-evenly_ pero tanto en el primero como en el último elemento, el espacio hacia los extremos es la mitad del espacio usado entre los elementos.
 
-\#### Encabezado nivel 4
+## Alineando elementos de forma vertical
 
-\##### Encabezado nivel 5
+Similar a como sucede con _justify-content_, es posible alinear y distribuir los elementos internos en el espacio vertical disponible usando la propiedad **align-items**, que puede tomar también los valores de: **flex-start**, **flex-end** y **center**.
 
-\###### Encabezado nivel 6
+Algo que es muy importante y se debe tener en cuenta a la hora de usar **align-items** y **justify-content** es que dependiendo de la propiedad **flex-direction** que se haya definido, el efecto de ambos se invierte, no en cuanto a sus elementos internos, sino en cuanto a si se debe usar uno u otro de manera vertical u horizontal.
 
-En HTML tendríamos la siguiente salida
+_IMPORTANTE_: Cuando la propiedad **flex-direction** se ha definido como **column**, la propiedad **justify-content** ya no va a aplicar sobre la alineación horizontal, sino sobre la vertical. Y **align-items** ya no aplicaría sobre la alineación vertical sino la horizontal. Se intercambian sus efectos.
 
-![](<.gitbook/assets/image (42).png>)
+Para centrar completamente los elementos internos de manera vertical y horizontal en su elemento padre, debemos usar el valor **center** en ambas propiedades.\
 
-### **Párrafos:**
 
-En formato Markdown escribirlos no es tan distinto a escribir en un texto plano, automáticamente se reconoce que es un párrafo, por ejemplo:
+## Estilos de la sección principal y de footer
 
-JavaScript es un lenguaje muy poderoso.
+En esta clase aplicaremos a nuestro proyecto los estilos necesarios para que la sección principal o **hero** de nuestro portafolio se vea correctamente. También completaremos la información de nuestro footer y le aplicaremos los respectivos estilos.
 
-En la Escuela de JavaScript de Platzi aprenderás todo lo necesario para ir
-
-de cero a rockstar.
-
-En HTML sería:
-
-JavaScript es un lenguaje muy poderoso.
-
-En la Escuela de JavaScript de Platzi aprenderás todo lo necesario para pasar de cero a rockstar.
-
-### **Itálicas y negritas**
-
-Hay partes en las que necesitaremos hacer énfasis en ciertas palabras, lo común es que utilicemos itálicas y negritas para resaltarlas, en Markdown debemos hacer lo siguiente:
-
-\*\*Esto es una negrita\*\*
-
-\*Esto es una itálica\*
-
-\*\*\_Esto es una negrita con itálica\_\*\*
-
-En HTML sería:
-
-**Esto es una negrita**
-
-_Esto es una itálica_
-
-_**Esto es una negrita con itálica**_
-
-### **Citas**
-
-Se utilizan para mostrar referencias a otros autores, en markdown hacemos:
-
-\> Esto es una cita
-
-Podemos poner citas con varios párrafos
-
-\> Este es el primer párrafo
-
-\>&#x20;
-
-\> Este es el último párrafo
-
-Podemos citar dentro de citas
-
-Esta es la cita secundaria
-
-Esta es la cita principal
-
-Podemos anidar elementos que vimos más arriba:
-
-**Este es el título de la cita**
-
-Cita de la cita
-
-### **Listas**
-
-Podemos utilizar listas ordenadas y listas sin orden:
-
-**Listas ordenadas**
-
-1\.    Primer item
-
-2\.    Segundo item
-
-3\.    Tercer item
-
-**Listas sin orden**
-
-* Item
-* Item
-* Item
-
-### **Código**
-
-Es esencial que en los README podamos escribir código, esto para especificar la instalación o partes que debemos resaltar de nuestro proyecto. Hay dos formas en las que podemos resaltar código, dentro de un párrafo o en una sección completa, tal cual estamos haciendo en esta clase.
-
-Esto es un pedazo de código dentro de un párrafo console.log('Hola Mundo')
-
-Para insertar código lo que hacemos es dejar una tabulación y automáticamente lo reconocerá como código si no podemos utilizar \`\` para crear el bloque, así:
-
-var **name** = 'Escuela de Javascript'
-
-console.log(**name**)
-
-### **Cómo escribir un buen README**
-
-No hay un estándar sobre cómo escribir un buen README, cada proyecto es diferente y depende de cada uno. Pero hay ciertas partes que sí o sí debería contener un buen README.
-
-4\.    Nombre: Especificamos cómo se llama nuestro proyecto.
-
-5\.    Descripción: es donde diremos para qué exactamente es el proyecto, qué problemas resuelve y cualquier información relevante.
-
-6\.    Instalación: muestra los pasos específicos para instalar el proyecto. Por lo general se muestra un pedazo del código necesario para la instalación.
-
-7\.    Cómo usar: describe rápidamente casos de uso en los cuales se puede usar el proyecto, además de mostrar funcionalidades.
-
-8\.    Cómo contribuir: si es un proyecto open source se describe acá la forma en la que deberían crearse las contribuciones.
-
-9\.    Licencia: muestra la licencia que tiene el proyecto.\
-En formato markdown podemos escribir cada uno de los items de esta manera:
-
-**PlatziVideo**
-
-PlatziVideo es la plataforma que te permite ver videos on demand y además
-
-te enseña JavaScript de cero a rockstar.
-
-**Instalación**
-
-Puedes instalarlo desde npm
-
-$ npm install platzi-**video**
-
-O también clonando el repositorio
-
-$ git **clone url**
-
-**Cómo se usa**
-
-**import** PlatziVideo
-
-video = PlatziVideo()
-
-**Cómo contribuir**
-
-Puedes crear un pull request al proyecto
-
-**Licencia**
-
-MIT
-
-Tener un buen README permite que los demás colaboradores del proyecto tengan todo el contexto necesario para poder arrancar, usar y crear nuevas funcionalidades.
+En esta clase vemos que además de las propiedades relacionadas con _display:flex_, en lo que se refiere a la alineación de elementos internos, existen también propiedades equivalentes que nos permite alinear textos dentro de un contenedor, estas propiedades son: **text-align** y **vertical-align**.
 {% endtab %}
 {% endtabs %}
+
+
 
 
 
